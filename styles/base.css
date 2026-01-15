@@ -36,21 +36,31 @@ h1 {
     color: #302826;
 }
 
-nav {
+.navigation li {
     justify-content: space-between;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
+    margin: 0 auto;
+    max-width: 800px;
 
+}
+
+nav ul {
+    list-style-type: none;
 }
 
 nav a {
+    display:block;
     color: blue;
+    text-align: center;
     border: 2px solid #b8860b;
-    padding: 0rem 1rem;
-    margin: 0rem 4rem 2rem 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    /*margin: 0rem 4rem 2rem 2rem;*/
+
 }
 
 nav a:hover {
-    color: #b8860b;
+    color: #302826;
     border: 2px solid blue
 }
 
@@ -237,7 +247,7 @@ ul {
 
 }
 
-ul li::before {
+.box li::before {
     content: "⭐";
     /* Custom bullet character */
     font-size: 1.2rem;
@@ -254,4 +264,18 @@ footer {
     color: #302826;
     font-size: 16px;
     width: 100%;
+}
+
+/* larger/wider views **************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+        /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+    }
 }
