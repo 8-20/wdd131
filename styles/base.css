@@ -10,7 +10,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #dbc323, #fff003, #dbc323);
+    background-color: #fff003;
+    /*background-image: linear-gradient(to bottom, #dbc323, #fff003, #dbc323);
     /* Gold gradient */
     border: 4px solid #b8860b;
     border-radius: 2rem;
