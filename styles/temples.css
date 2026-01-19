@@ -1,5 +1,6 @@
 body {
     max-width: 960px;
+    min-width: 300px;
     /* Adjust width as needed, e.g., 90% or 1200px */
     margin-left: auto;
     margin-right: auto;
@@ -8,12 +9,19 @@ body {
     /* Ensures it takes full width on small screens */
 }
 
+header {
+    display: grid;
+    direction: rtl;
+    grid-template-columns: 50px 1fr 200px;;
+    border: 2px solid green;
+}
+
 h1 {
     font-size: 1.5rem;
-    padding: 1rem;
     background-color: #000;
     color: #fff;
     text-align: center;
+    border: 2px solid red;
 }
 
 h2 {
@@ -36,6 +44,7 @@ p {
     padding: 0.5rem 0.75rem;
     background-color: #eee;
     color: #000;
+    border: 2px solid red;
 }
 
 #menu::before {
@@ -43,6 +52,7 @@ p {
 }
 
 nav {
+
     background-color: #ace;
 }
 
