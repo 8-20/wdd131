@@ -41,12 +41,23 @@ header {
 }
 
 h1 {
+    font-family: Baskerville,
+        Georgia,
+        'Times New Roman',
+        Times,
+        serif;;
     font-size: 1.5rem;
     color: var(--primary-color);
     text-align: center;
 }
 
 h2 {
+    font-family: Baskerville,
+        Georgia,
+        'Times New Roman',
+        Times,
+        serif;
+    font-size: 1.2rem;
     text-align: center;
     color: var(--primary-color);
 }
@@ -55,6 +66,11 @@ h2 {
 /* Mobile View ***************/
 #menu {
     display: block;
+    font-family: Baskerville,
+        Georgia,
+        'Times New Roman',
+        Times,
+        serif;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
@@ -79,10 +95,13 @@ h2 {
 
 .navigation a {
     display: block;
+    margin: 0.5rem;
     padding: 0.75rem;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
-    color: var(--primary-color);;
+    color: var(--primary-color);
+    border: 2px solid darkblue;
+    border-radius: 10px;
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -117,10 +136,9 @@ h2 {
 
 main {
     display: grid;
-    /*height: 100vh;*/
-    grid-gap: 2px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    font-family: Roboto, sans-serif;
+    font-family: Baskerville, Georgia, 'Times New Roman', Times, serif;
 }
 
 figure {
@@ -132,6 +150,11 @@ figure {
 }
 
 figcaption {
+    font-family: Baskerville,
+        Georgia,
+        'Times New Roman',
+        Times,
+        serif;
     font-size: .8rem;
     color: var(--primary-color);
 

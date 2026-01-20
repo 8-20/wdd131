@@ -2,11 +2,11 @@
 
 In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
 */
-@media only screen and (min-width: 400px) {
-    h1 {
-        font-size: 2rem;
-    }
+@media only screen and (min-width: 450px) {
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
 
+    }
 
     .navigation {
         display: flex;
