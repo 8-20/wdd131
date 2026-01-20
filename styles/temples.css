@@ -35,20 +35,24 @@ body {
 }
 
 header {
-    display: grid;
-    direction: rtl;
-    grid-template-columns: 50px 1fr 200px;;
+     display: flex;
+     direction: rtl;
+     align-items: center;
+     justify-content: space-between;
+     color: var(--primary-color);
+     padding: 10px 20px;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-h1 {
+nav h1 {
     font-family: Baskerville,
         Georgia,
         'Times New Roman',
         Times,
-        serif;;
+        serif;
     font-size: 1.5rem;
     color: var(--primary-color);
-    text-align: center;
+    margin: 0;
 }
 
 h2 {
@@ -71,18 +75,20 @@ h2 {
         'Times New Roman',
         Times,
         serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    color: var(--primary-color);;
+    margin-bottom: auto;
+    color: var(--primary-color);
+    border: 3px solid darkblue;
+    border-radius: 10px;
 }
 
 #menu::before {
-    content: "≡";
+    content: "🍔";
+    font-size: 3rem;
 }
-
-
 .navigation {
     list-style: none;
     margin: 0 auto;
