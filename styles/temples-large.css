@@ -2,24 +2,47 @@
 
 In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
 */
-@media only screen and (min-width: 450px) {
-    header {
-        grid-template-columns: 1fr 1fr 1fr;
+@media only screen and (min-width: 550px) {
 
+    h2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
-    .navigation {
+    nav {
+       display: flex;
+       align-items: center;
+        width: 100%;
+        flex: 1 1 100%;
+        direction: ltr;
+    }
+
+
+        h1 {
+            width: 30%;
+            font-size: 2.5vw;
+        }
+        ul {
+            display: flex;
+            width: 70%;
+            height: auto;
+        }
+    /*.navigation {
         display: flex;
-    }
+        direction: ltr;
+    }*/
+
 
     .navigation li {
-        display: block;
+        display:block;
         /* change state in small view */
-        flex: 1 1 100%;
+       flex: 1 1 100%;
     }
 
     .navigation a {
         text-align: center;
+        font-size: 2vw;
     }
 
     #menu {
