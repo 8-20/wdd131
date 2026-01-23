@@ -88,7 +88,7 @@ h2 {
 }
 
 #menu::before {
-    content: "🍔";
+    content: "≡";
     font-size: 3rem;
 }
 .navigation {
