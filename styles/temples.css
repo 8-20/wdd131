@@ -1,4 +1,8 @@
 :root {
+    font-family: Baskerville,
+            Georgia,
+            'Times New Roman',
+            serif;
     --primary-color: darkblue;    
 
 }
@@ -46,22 +50,12 @@ header {
 }
 
 h1 {
-    font-family: Baskerville,
-        Georgia,
-        'Times New Roman',
-        Times,
-        serif;
-    font-size: 1.5;
+    font-size: 1.5rem;
     color: var(--primary-color);
     margin: 0;
 }
 
 h2 {
-    font-family: Baskerville,
-        Georgia,
-        'Times New Roman',
-        Times,
-        serif;
     font-size: 2.5vw;
     text-align: center;
     color: var(--primary-color);
@@ -72,11 +66,6 @@ h2 {
 /* Mobile View ***************/
 #menu {
     display: block;
-    font-family: Baskerville,
-        Georgia,
-        'Times New Roman',
-        Times,
-        serif;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
@@ -88,7 +77,7 @@ h2 {
 }
 
 #menu::before {
-    content: "≡";
+    content: "🍔";
     font-size: 3rem;
 }
 .navigation {
@@ -139,7 +128,7 @@ h2 {
 }
 
 #menu.show::before {
-    content: "X";
+    content: "✖️";
 }
 
 main {
