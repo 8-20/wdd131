@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./styles/place.css">
-    <script src="./scripts/places.js" defer></script>
+    <script src="./scripts/place.js" defer></script>
 </head>
 <body>
     <h1>🌴 MAUI 🌴</h1>
@@ -72,19 +72,23 @@
             <image href="images/sun-cloud-icon.svg" width="100" alt="Stylized sun icon">
         </svg>
         <p class="p-label">Temperature:</p>
-        <p id="temperature" class="p-value">&nbsp 71&deg F</p>
+        <p class="p-value"> <span id="temperature">71</span>&deg F</p>
 
         <p class="p-label">Precipitation:</p>
-        <p class="p-value">&nbsp 54%</p>
+        <p class="p-value"> 54%</p>
 
-        <pclass="p-label">Wind:</p>
-        <p id="wind" class="p-value">&nbsp 4 mph</p>
+        <p class="p-label">Wind:</p>
+        <p class="p-value"><span id="windSpeed">4</span> mph</p>
 
         <p class="p-label">Wind Chill:</p>
-        <p class="p-value">&nbsp 4 mph</p>
+        <p class="p-value"> <span id="windChillResult">"text"</span></p>
     </div>
     
     </main>
+    <footer>
+        <p> ©️ <span id="currentYear"></span> 🌈 Paul A. Scherbel 🌈 Star Valley, Wyoming 🌈</p>
+        <p>Last updated: <span id="lastModifiedDate"></span></p>
+    </footer>
 
     
 </body>
