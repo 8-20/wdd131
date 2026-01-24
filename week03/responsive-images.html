@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album</title>
+    <meta name="description"
+        content="An example of a responsive website displaying nine images of my favorite temples of the Church of Jesus Christ of Latter-Day Saints.">
+    <meta name="author" content="Paul A. Scherbel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Temple name and location" width="500">
+                <caption>Rome Temple at Sunset</caption>
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>

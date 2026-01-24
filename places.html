@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Favorite Place - Paul A. Scherbel</title>
+    <meta name="description"
+        content="A responsive website displaying images and information about the island of Maui, one of my favorite places.">
+    <meta name="author" content="Paul A. Scherbel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles/places.css">
+    <script src="./scripts/places.js" defer></script>
+</head>
+<body>
+    <h1>🌴 MAUI 🌴</h1>
+    <main>
+        <picture class="photo">
+            <!-- Image for viewports wider than 740px -->
+            <source media="(min-width: 740px)" srcset="images/maui2.webp">
+    
+            <!-- Image for viewports wider than 540px -->
+            <source media="(min-width: 540px)" srcset="images/maui2.webp">
+    
+            <!-- Default image for all other screen sizes (and as a fallback) -->
+            <img src="images/maui.webp" width="410" alt="A palm tree and rainbow on Maui">
+        </picture>
+        <div class="data">
+            <h2>DATA</h2>
+            <p class="p-label">Population:</p>
+            <p class="p-value">&nbsp 163,688 (2024)</p>
+        
+            <p class="p-label">Area:</p>
+            <p class="p-value">&nbsp 727.2 Sq. Miles</p>
+        
+            <p class="p-label">County Seat:</p>
+            <p class="p-value">&nbsp Wailuku</p>
+        
+        
+            <p class="p-label">Languages:</p>
+            <p class="p-value">&nbsp English, Hawaiian</p>
+        
+            <p class="p-label">Currency:</p>
+            <p class="p-value">&nbsp USD ($)</p>
+        
+            <p class="p-label">Time Zone:</p>
+            <p class="p-value">&nbsp UTC-10 (HST)</p>
+        
+            <p class="p-label">Area Code:</p>
+            <p class="p-value">&nbsp (808)</p>
+        
+            <p class="p-label">Highest Elevation:</p>
+            <p class="p-value">&nbsp 10,023 ft. (Haleakala)</p>
+        
+            <p class="p-label">Avg Daily Temp.:</p>
+            <p class="p-value">&nbsp 78&deg F - 85&deg F</p>
+        </div>
+    </main>
+    <div class="weather">
+        <h2>WEATHER</h2>
+    
+        <svg class="wind">
+            <image href="images/wind-palm-tree-icon.svg" width="100" alt="A windy palm tree icon">
+        </svg>
+        <svg class="sun">
+            <image href="images/sun-cloud-icon.svg" width="100" alt="Stylized sun icon">
+        </svg>
+        <p class="p-label">Temperature:</p>
+        <p id="temperature" class="p-value">&nbsp 71&deg F</p>
+
+        <p class="p-label">Precipitation:</p>
+        <p class="p-value">&nbsp 54%</p>
+
+        <pclass="p-label">Wind:</p>
+        <p id="wind" class="p-value">&nbsp 4 mph</p>
+
+        <p class="p-label">Wind Chill:</p>
+        <p class="p-value">&nbsp 4 mph</p>
+    </div>
+    
+    </main>
+
+    
+</body>
+</html>
