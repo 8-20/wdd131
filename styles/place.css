@@ -131,7 +131,7 @@ footer {
             background-image: url("../images/maui2.webp");
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows:  1fr 1fr 1fr;
+            grid-template-rows:  1fr 1fr;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -151,9 +151,9 @@ footer {
         }
        
         .data h2 {
-            text-align: left;
-            background-color: #4EBEFF;
-            border: 2px solid red;
+            text-align: center;
+            background-color: #9899AD;
+            border: 5px solid #9899AD;
             margin: 20px;
 
         }
@@ -162,7 +162,46 @@ footer {
             grid-area: 2 /3 / 3 / 3;
             margin: 20px;
         }
-        
+        .wind {
+            display:none
+        }
+
+        .sun {
+            display:none;
+        }
+        .weather-heading {
+            display: inline-block;
+            /* Allows pseudo-elements to align next to it correctly */
+            position: relative;
+            margin-top: 5px;
+            padding-right: 60px;
+            /* Add some space for the icons */
+            background-color: #9899AD;
+        }
+
+        .weather-heading::before {
+            content: url("../images/wind-palm-tree-icon-small.svg");
+            /* First weather icon (e.g., sun emoji) */
+            /*font-size: 1.5rem;*/
+            position: absolute;
+            right: 30px;
+            /* Position the first icon */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .weather-heading::after {
+            content: url("../images/sun-cloud-icon-small.svg");
+            /* Second weather icon (e.g., cloud emoji) */
+            font-size: 1.5rem;
+            position: absolute;
+            right: 0;
+            /* Position the second icon */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        }
+
         footer {
             grid-area: 4 / 1 / 4 / 4;
             background: var(--global-bg-color);
