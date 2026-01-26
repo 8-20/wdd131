@@ -26,9 +26,9 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 10px;
     font-size: 3rem;
     background: var(--global-bg-color);
+    border-bottom:10px solid #0C7600 ;
 }
 h2 {
     text-align: center;
@@ -41,8 +41,6 @@ h2 {
     grid-template-columns: 1fr;
     width: 100%;
     height: auto;
-    padding: 5px;
-    border-radius: 10px;
 }
 
 .photo img {
@@ -55,11 +53,8 @@ h2 {
     grid-template-columns: 1fr 1fr;
     width: auto;
     height: auto;
-   /* min-width: 400px;*/
     border: 5px solid #9899AD;
     background: var(--global-bg-color);
-    border-radius: 10px;
-    margin: 5px;
 }
 .data h2 {
     grid-column: span 2;
@@ -73,10 +68,7 @@ h2 {
     gap: 15px;
     /*max-width: 375px;*/
     border: 5px solid #F6D759;
-    border-radius: 10px;
     background: var(--global-bg-color);
-    padding-bottom: 5px;
-    margin-bottom: 5px;
 }
 
 .weather h2 {
@@ -113,8 +105,8 @@ footer {
     text-align: center;
     font-size: 16px;
     width: 100%;
-    margin: 20px 0;
     background: var(--global-bg-color);
+    border-top: 10px solid #0C7600
 }
 
 @media only screen and (min-width: 740px) {
@@ -172,32 +164,29 @@ footer {
         }
         .weather-heading {
             display: inline-block;
-            /* Allows pseudo-elements to align next to it correctly */
             position: relative;
+            width: 100%;
             margin-top: 5px;
-            padding-right: 60px;
-            /* Add some space for the icons */
+            padding: 10px;
+            padding-right: 65px;
+            padding-left: 55px;
             background-color: #9899AD;
         }
 
         .weather-heading::before {
             content: url("../images/wind-palm-tree-icon-small.svg");
-            /* First weather icon (e.g., sun emoji) */
-            /*font-size: 1.5rem;*/
             position: absolute;
             right: 30px;
-            /* Position the first icon */
             top: 50%;
             transform: translateY(-50%);
         }
 
         .weather-heading::after {
             content: url("../images/sun-cloud-icon-small.svg");
-            /* Second weather icon (e.g., cloud emoji) */
             font-size: 1.5rem;
             position: absolute;
-            right: 0;
-            /* Position the second icon */
+            Left: 0%;
+            padding-left: 10px;
             top: 50%;
             transform: translateY(-50%);
         }
