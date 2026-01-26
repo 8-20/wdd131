@@ -24,19 +24,17 @@ body {
     font-family: Baskerville, 'Times New Roman', Times, serif;
 }
 
-h1,
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3rem;
+    background: var(--global-bg-color);
+}
 h2 {
-    /*max-width: 960px;
-    min-width: 330px;*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-
-h1 {
-    font-size: 3rem;
-}
-
 
 .photo {
     display: grid;
@@ -44,7 +42,6 @@ h1 {
     width: 100%;
     height: auto;
     padding: 5px;
-    border: 5px solid #0C7600;
     border-radius: 10px;
 }
 
@@ -58,6 +55,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     width: auto;
     height: auto;
+   /* min-width: 400px;*/
     border: 5px solid #9899AD;
     background: var(--global-bg-color);
     border-radius: 10px;
@@ -111,14 +109,61 @@ p {
 }
 
 footer {
-    max-width: 960px;
-    margin: 0 auto;
-
-    /* Adds a shadow for depth */
     text-align: center;
     font-size: 16px;
     width: 100%;
-    border: 5px solid blue;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
+
+@media only screen and (min-width: 740px) {
+     .photo  {
+            display: none;
+        }
+
+        body {
+            max-width: 960px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+         
+        main  { 
+            background-image: url("../images/maui2.webp");
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:  1fr 1fr 1fr;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        h1 {
+            border-bottom: 20px solid #0C7600;
+        }
+
+        data {
+            grid-row: 1 / span 2;
+            width: 100%;
+            height: 100%;
+            margin: 20px;
+            align-self: center;
+        }
+       
+        .data h2 {
+            text-align: left;
+            background-color: #4EBEFF;
+            border: 2px solid red;
+            margin: 20px;
+
+        }
+
+        .weather {
+            grid-area: 2 /3 / 3 / 3;
+            margin: 20px;
+        }
+        
+        footer {
+            grid-area: 4 / 1 / 4 / 4;
+            background: var(--global-bg-color);
+        }
+    }
