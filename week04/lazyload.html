@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Lazyload Example - Paul A. Scherbel</title>
+    <meta name="description"
+        content="A responsive website displaying six images from CES 2026to help me understand Lazyload comcepts.">
+    <meta name="author" content="Paul A. Scherbel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles/lazyload.css">
+    <script src="./scripts/lazyload.js" defer></script>
+    <link rel="icon" type="image/png" href="rainbow-compass.png">
+</head>
+<body>
+    <main>
+        <h1>Photos from CES 2026 in Las Vegas</h1>
+        <picture>
+            <img src="./images/dog-robot.webp" alt="Dog Robot" loading="lazy" width="600" height="400">
+        </picture>
+        <picture>
+            <img src="./images/auto-cotton-candy.webp" alt="Automatic Cotton Canday Making Machine" loading="lazy" width="600" height="400">
+        </picture>
+        <picture>
+            <img src="./images/autonomous-18wheeler.webp" alt="Autonomous driving 18-Wheeler" loading="lazy" width="600" height="400">
+        </picture>
+        <picture>
+            <img src="./images/big-robot.jpg" alt="Huge Modern Robot" loading="lazy" width="600" height="400">
+        </picture>
+        <picture>
+            <img src="./images/zoox.webp" alt="Zoox autonomous driving taxi" loading="lazy" width="600" height="400">
+        </picture>
+        <picture>
+            <img src="./images/inside-zoox.webp" alt="inside Zoox autonomous driving taxi" loading="lazy" width="600" height="400">
+        </picture>
+    </main>
+    <footer>
+        <p> ©️ <span id="currentYear"></span> 🌈 Paul A. Scherbel 🌈 Star Valley, Wyoming 🌈</p>
+        <p>Last updated: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+</body>
+</html>
