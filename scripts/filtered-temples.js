@@ -63,7 +63,7 @@ const temples = [
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "images/payson-utah.webp"
     },
     {
         templeName: "Yigo Guam",
@@ -179,6 +179,8 @@ function createTempleCard(filteredTemples) {
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "400");
+        img.setAttribute("height", "250");
 
         card.appendChild(name);
         card.appendChild(location);
