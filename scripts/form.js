@@ -27,6 +27,14 @@ const products = [
         averagerating: 5.0
     }
 ];
+// **************POPULATE DROPDOWN MENU******************
+const selectMenu = document.getElementById('product-selector');
+products.forEach(item => {
+    // Use the Option constructor: new Option(text, value)
+    const newOpt = new Option(item.name, item.id);
+    selectMenu.add(newOpt);
+});
+
 
 // **************VIEW NUMBER OF VISITS IN LOCAL STORAGE******************
 // Initialize display element variable
@@ -50,14 +58,8 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 
-// **************MY TRADITIONAL FOOTER CODE******************
-const selectMenu = document.getElementById('product-selector');
-products.forEach(item => {
-    // Use the Option constructor: new Option(text, value)
-    const newOpt = new Option(item.name, item.id);
-    selectMenu.add(newOpt);
-});
 
+// **************MY TRADITIONAL FOOTER CODE******************
 document.addEventListener('DOMContentLoaded', function () {
     // Get the span element by its ID
     const lastModifiedSpan = document.getElementById('lastModifiedDate');

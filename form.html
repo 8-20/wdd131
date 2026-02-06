@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Product <Form></Form></title>
+    <title>WDD 131 - Product Review Form</title>
     <meta name="description"
         content="An example of a responsive HTML form with a confirmation page.">
     <meta name="author" content="Paul A. Scherbel">
@@ -19,13 +19,16 @@
     <link rel="icon" type="image/png" href="rainbow-compass.png">
 </head>
 <body>
-    <main>
+    <header>
         <h1>Product Review</h1>
+    </header>
+    <main>
+        
         <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <label>Product Name</label>
-                <select id="product-selector" required>
-                    <option value="">-- Choose a Product --</option>
+                <select id="product-selector" name="product" required>
+                    <option value="" disabled selected>"Select a Product"</option>
                 </select>
 
                 <label>Overall Rating</label>
