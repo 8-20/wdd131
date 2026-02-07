@@ -27,7 +27,7 @@
         <form method="get" action="review.html" class="wf1">
             <fieldset>
 
-                <label>
+                <label for="product-selector">
                     Product Name
                     <select id="product-selector" name="product" required>
                         <option value="" disabled selected>Select a Product</option>
@@ -43,8 +43,9 @@
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
             
-                <label>Date of Installation:<input type="date" id="date" name="completeDate"></label>
-                
+                <label for="date">Date of Installation:</label>
+                <input type="date" id="date" name="completeDate">
+              
                 <div class="features">
                     <p>Which features did you find useful in the product? <br><span class="italics">(Click all that apply)</span></p>
             
@@ -62,11 +63,11 @@
                 </div>
 
                 <div class="review">
-                    <label>Written Review: <span class="italics">(Optional)</span></label>
+                    <label for="review-text">Written Review: <span class="italics">(Optional)</span></label>
                     <textarea id="review-text" name="review" placeholder="Enter unlimited text here..."></textarea>
                 </div>
                 <div class="name">
-                    <label>Your Name: <span class="italics">(Optional)</span> </label>
+                    <label for="name-input">Your Name: <span class="italics">(Optional)</span> </label>
                     <input type="text" id="name-input" name="name">
                 </div>
             </fieldset>
