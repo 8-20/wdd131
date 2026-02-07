@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: Baskerville, 'Times New Roman', Times, serif;
+    font-family: var(--font-family);
     max-width: 30rem;
     margin: 0 auto;
     padding: 20px; 
@@ -75,12 +75,12 @@ input[type="radio"] {
 }
 
 .stars>label {
-    color: gold;
+    color: #fff500;
     width: 30px;
     height: 30px;
     font-size: 2rem;
-    margin-top: -15px;
-    margin-bottom: 5px;
+    margin-top: -5px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -100,7 +100,6 @@ input[type="radio"] {
 
 input[type="date"] {
     background-color: var(--background-color);
-    /*display: block;*/
     border: 1px solid var(--primary-bordor-color);
     border-radius: var(--global-radius);
     padding: .75rem;
@@ -147,7 +146,7 @@ input[type="date"] {
 }
 
 .checkbox input[type="checkbox"]:checked {
-    background-color: gold;
+    background-color: #fff500;
     border-color: gold;
     content: "\2713";
     font-size: 16px; 
