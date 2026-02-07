@@ -102,14 +102,12 @@ input[type="date"] {
     background-color: var(--background-color);
     border: 1px solid var(--primary-bordor-color);
     border-radius: var(--global-radius);
-    padding: .75rem;
     color: var(--primary-color);
     max-width: 200px;
     font-family: var(--font-family);
     font-size: 1rem;
     width: 200px;
     padding: 5px;
-    font-size: 16px;
 }
 
 .features {
