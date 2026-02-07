@@ -238,5 +238,9 @@ footer {
     width: 100%;
 }
 
+@media only screen and (min-width: 30rem) {
+    body {
+        max-width: 40rem;
+    }
 
-
+}
