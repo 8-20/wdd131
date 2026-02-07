@@ -4,7 +4,7 @@
             'Times New Roman',
             serif;
     --primary-color: black;
-    --primary-bordor-color: darkblue;
+    --primary-bordor-color: #000099;
     --background-color: #eee;
     --global-radius: 6px;
 }
@@ -28,11 +28,11 @@ h1 {
     border: 2px solid var(--primary-bordor-color);
     border-radius: var(--global-radius);
     font-size: 2rem;
-    background-color: #0a0a1a;
+    background-color: #000099;
         /* Very dark blue/black background */
     background-image: radial-gradient(circle at center, #0f3460 0%, #0a0a1a 100%);
         /* Subtle blue glow */
-    color: white;
+    color: #fff;
         /* Light text color for contrast */
         /* Ensures the background covers the entire viewport */
         /*min-height: 100vh;*/
@@ -138,14 +138,14 @@ input[type="date"] {
     width: 20px;
     height: 20px;
     border-radius: var(--global-radius);
-    background-color: #fff;
+    background-color: #ffffff;
     cursor: pointer;
-    border: 2px solid gold;
+    border: 2px solid #ffd700;
 }
 
 .checkbox input[type="checkbox"]:checked {
     background-color: #fff500;
-    border-color: gold;
+    border-color: #f5ce00;
     content: "\2713";
     font-size: 16px; 
 }
@@ -212,7 +212,7 @@ input[type="submit"] {
     margin-top: 2rem;
     background-color: #0a0a1a;
     background-image: radial-gradient(circle at center, #0f3460 0%, #0a0a1a 100%);
-    color: white;
+    color: #ffffff;
     border: 2px solid var(--primary-bordor-color);
     border-radius: 6px;
     padding: .8rem;
