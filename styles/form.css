@@ -29,31 +29,28 @@ h1 {
     border-radius: var(--global-radius);
     font-size: 2rem;
     background-color: #000099;
-        /* Very dark blue/black background */
     background-image: radial-gradient(circle at center, #0f3460 0%, #0a0a1a 100%);
-        /* Subtle blue glow */
     color: #fff;
-        /* Light text color for contrast */
-        /* Ensures the background covers the entire viewport */
-        /*min-height: 100vh;*/
-       /* margin: 0;*/
     margin-bottom: 10px;
-
 }
 
-/* stars */
-input[type="radio"] {
-    display: none;
-    position: relative;
+.required {
+    font-size: 1.5rem;
+    color: red;
 }
 
-.wf1 label {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: .5rem;
-    color: var(--primary-color);
-    font-size: 1.2rem;
+.double-flex {
+    display: flex;
 }
+#advisory {
+    font-size: 1rem;
+    align-items: center;
+}
+
+label[for="product-selector"] {
+    display: inline-block
+}
+
 
 #product-selector {
     background-color: var(--background-color);
@@ -66,6 +63,16 @@ input[type="radio"] {
     font-family: var(--font-family);
     font-size: 1rem;
     margin-bottom: 5px;
+}
+
+.rating {
+    display: flex;
+}
+
+/* stars */
+input[type="radio"] {
+    display: none;
+    position: relative;
 }
 
 .stars {
