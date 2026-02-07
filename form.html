@@ -26,8 +26,8 @@
         
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label>Product Name</label>
-                <select id="product-selector" name="product" required>
+                
+                <label>Product Name <select id="product-selector" name="product" required></label>
                     <option value="" disabled selected>"Select a Product"</option>
                 </select>
 
@@ -40,7 +40,7 @@
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
             
-                <label>Date of Installation:<input type="date" name="completeDate"></label>
+                <label>Date of Installation:<input type="date" id="date" name="completeDate"></label>
                 
                 <div class="features">
                     <p>Which features did you find useful in the product? <br><span class="italics">(Click all that apply)</span></p>
@@ -48,19 +48,19 @@
                 </div>
 
                 <div class="checkbox">
-                    <input type="checkbox" name="design" value="yes">
-                    <label>Design</label>
-                    <input type="checkbox" name="durability" value="yes">
-                    <label>Durability</label>
-                    <input type="checkbox" name="ease" value="yes">
-                    <label>Easy to Use</label>
-                    <input type="checkbox" name="performance" value="yes">
-                    <label>Performance</label>
+                    <input type="checkbox" id="design-checkbox" name="design" value="yes">
+                    <label for="design-checkbox">Design</label>
+                    <input type="checkbox" id="durability-checkbox" name="durability" value="yes">
+                    <label for="durability-checkbox">Durability</label>
+                    <input type="checkbox" id="ease-checkbox" name="ease" value="yes">
+                    <label for="ease-checkbox">Easy to Use</label>
+                    <input type="checkbox" id="performance-checkbox" name="performance" value="yes">
+                    <label for="performance-checkbox">Performance</label>
                 </div>
 
                 <div class="review">
                     <label>Written Review: <span class="italics">(Optional)</span></label>
-                    <textarea placeholder="Enter unlimited text here..."></textarea>
+                    <textarea id="review-text" name="review" placeholder="Enter unlimited text here..."></textarea>
                 </div>
                 <div class="name">
                     <label>Your Name: <span class="italics">(Optional)</span> </label>
