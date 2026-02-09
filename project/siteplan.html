@@ -1,49 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WDD 131 - Favorite Place - Paul A. Scherbel</title>
-<meta name="description"
-    content="A recipe finder website designed to display favorite recipies in several categories.">
-<meta name="author" content="Paul A. Scherbel">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album</title>
+    <meta name="description"
+        content="A site plan for way2yummy.com -- a website representing my final project for WDD-131 Dynamic Web Fundamentals. It collects and displays yummy recipes.">
+    <meta name="author" content="Paul A. Scherbel">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="./styles/siteplan.css">
-<script src="./scripts/.js" defer></script>
-<link rel="icon" type="image/png" href="rainbow-compass.png">
+    <link rel="stylesheet" type="text/css" href="./styles/siteplan.css">
+    <script src="./scripts/siteplan.js" defer></script>
+    <link rel="icon" type="image/png" href="rainbow-compass.ico">
 </head>
 <body>
     <header>
-        <img src="./images/logo.webp" alt="Way 2 Yummy Logo" width="256" height="256"> 
-    
-        <nav>
-            <div class="navigation">
-                <a href="index.html">Home</a>
-                <a href="index.html">Add a Recipe</a>
-                <a href="about.html">Lunch</a>
-                <a href="trips.html">Dinner</a>
-                <a href="contact.html">Dessert</a>
-                <a href="contact.html">Snacks</a>
-                <a href="contact.html">Beverages</a>
-            </div>
-        </nav>
-        <h1>Lets Make Something Yummy!</h1>
+        <figure class="logo">
+            <img src="./images/logo.webp" alt="way2yummy logo" width="200">
+            <figcaption>Logo</figcaption>
+        </figure>
+        <figure class="banner">
+            <h1>way2yummy.com</h1>
+            <figcaption>website url</figcaption>
+        </figure>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="./images/kitchen1.webp" alt="Down the River Hero Image" width="500">
-        
+        <p class="site-plan"><span class="bold">Site Name:</span> The name of my website is <span class="my-url">way2yummy.com</span>.</p>
+
+        <p class="purpose"><span class="bold">Purpose:</span> I am collecting local recipes for delicious food items and this url seemed
+            catchy and cleaver.</p>
+
+        <div class="suggestions">  
+            <p class="scenarios"><span class="bold">Scenarios:</span></p>
+            <ul>
+                <li>I would like to add my favorite <span class="my-url">yummy</span> recipe.</li>
+                <li>🥗 How about a <span class="my-url">yummy</span> salad.</li>
+                <li>🍰 I'm looking for a <span class="my-url">yummy</span> dessert.</li>
+                <li>🍹Quench my thirst with something <span class="my-url">yummy</span>.</li>
+                <li>🍪I need a <span class="my-url">yummy</span> snack.</li>
+            </ul>
+        </div>
+        <p class="schema"><span class="bold">Color Schema:</span>I have chosen to use the following four colors from my logo:
+        </p>
+        <div class="colors">
+            <div class="box" id="color4"></div>
+            <div class="box" id="color3"></div>
+            <div class="box" id="color2"></div>
+            <div class="box" id="color1"></div>
+        </div>
+
+        <div class="sample-text">
+            <p class="typography"><span class="bold">Typography:</span></p>
+            <ul>
+                <li class="pacifico">I am using this font for anything that should look hand-witten such as recipe information.</li>
+                <li class="baskerville">I am using this font for basic instructions.</li>
+            </ul>
+        </div>
+
+        <p class="wireframe"><span class="bold">Wireframes:</span></p>
+        <div class="wireframes">
+            <figure>
+                <img src="./images/wireframe_index.webp" alt=" Wireframe for index.html" width="400" height="300">
+                <figcaption>Wireframe for index.html</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/recipes.html-wide .webp" alt=" Wireframe for view-receipes.html (Wide View)" width="400" height="500">
+                <figcaption>Wireframe for view-recipes.html (Wide View)</figcaption>
+            </figure>
             
-            <h2>You have 2 choices </h2>
-                
-            <h3>You can add one of your favorite recipes to our website by clicking Submit above.</h3>
-            <h3>You can search for a yummy recipe already submitted by someone else by clicking on the category you are interested in.</h3>
+            <figure>
+                <img src="./images/recipes.html-narrow.webp" alt="Wireframe for view-recipes.html (Narrow View)" width="300" height="900">
+                <figcaption>Wireframe for view-recipes.html (Narrow View)</figcaption>
+            </figure>
             
+            <figure>
+                <img src="./images/add-recipes.html-narrow.webp" alt="Wireframe for add-recipes.html (Narrow View)" width="300" height="900">
+                <figcaption>Wireframe for add-recipes.html (Only Narrow View)</figcaption>
+            </figure>
+
+        </div>
+
+
     </main>
+
+    <footer>
+        <p> ©️ <span id="currentYear"></span> 🌈 Paul A. Scherbel 🌈 Star Valley, Wyoming 🌈</p>
+        <p>Last updated: <span id="lastModifiedDate"></span></p>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </footer>
+
+    
 </body>
 </html>
