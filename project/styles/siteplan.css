@@ -4,9 +4,9 @@
         Georgia,
         'Times New Roman',
         serif;
-    --primary-color: #2c791d;
-    --secondary-color: #dc5602;
-    --tertiary-color: #157170;
+    --primary-color: #205915;
+    --secondary-color: #880000;
+    --tertiary-color: #0a585d;
     --primary-bordor-color: #f59410;
     --background-color: #f59410;
     --global-radius: 6px;
@@ -35,20 +35,21 @@ margin-right: auto;
 border: 5px solid transparent;
     /* Required for border-image to show */
 border-width: 20px;
-border-image: linear-gradient(to right, #2c791d,#dc5602,#157170, #f59410 ) 3;
+border-image: linear-gradient(to right, #2c791d,#c20000,#157170, #f59410 ) 3;
 
 }
 
 
 header {
     width: 100%;
-    display:grid;
-    grid-template-columns: 200px 1fr;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     border-bottom: 10px solid var(--primary-color);
     border: 5px solid transparent;
         /* Required for border-image to show */
     border-width: 0 0 10px 0;
-    border-image: linear-gradient(to right, #2c791d, #dc5602, #157170, #f59410) 3;
+    border-image: linear-gradient(to right, #2c791d, #c20000, #157170, #f59410) 3;
 }
 
 main {
@@ -74,7 +75,7 @@ main {
 .banner {
     text-align: center;
     font-family: var(--font-primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #2c791d;
 }
 
@@ -82,8 +83,15 @@ main {
     text-align: center;
     font-family: var(--font-secondary);
     font-size: 1rem;
-    color: #000000;
-    margin-top: -60px;
+    color: var(--secondary-color);
+    margin-top: -40px;
+}
+
+.logo figcaption {
+    text-align: center;
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+        color: var(--secondary-color);
 }
 
 .bold {
@@ -159,7 +167,7 @@ main {
     font-family: var(--font-secondary);
     margin: 10px;
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 .sample-text ul {
@@ -170,7 +178,7 @@ main {
 .pacifico {
     font-family: var(--font-primary);
     font-size: 1.2rem;
-    color: var(--secondary-color)
+    color: var(--primary-color)
 }
 
 .baskerville {
@@ -183,7 +191,7 @@ main {
     font-family: var(--font-secondary);
     margin: 10px;
     font-size: 1.2rem;
-    color: var(--primary-bordor-color);
+    color: var(--secondary-color);
 }
 
 .wireframes {
@@ -192,10 +200,11 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-figcaption {
+.wireframes figcaption {
     text-align: center;
     font: var(--font-secondary);
     font-size: 1.2rem;
+    color: var(--secondary-color)
 }
 
 footer {
