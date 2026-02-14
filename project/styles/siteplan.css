@@ -18,22 +18,18 @@
 
 html,
 body {
-    /* Ensures html and body take the full height of the viewport */
+    
     margin: 0;
-    /* Removes default browser margins */
+    
     
 }
 
 body {
 width: 90%;
-/* Set a specific width */
 max-width: 960px;
-/* Optional: for responsive design */
 margin-left: auto;
-/* Centers the container horizontally */
 margin-right: auto;
 border: 5px solid transparent;
-    /* Required for border-image to show */
 border-width: 20px;
 border-image: linear-gradient(to right, #2c791d,#c20000,#157170, #f59410 ) 3;
 

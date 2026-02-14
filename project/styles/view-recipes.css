@@ -1,10 +1,15 @@
 :root {
-    font-family: Baskerville,
+    --font-primary: Pacifico, cursive;
+    --font-secondary: Baskerville,
         Georgia,
         'Times New Roman',
         serif;
-    --primary-color: darkblue;
-
+    --primary-color: #205915;
+    --secondary-color: #880000;
+    --tertiary-color: #0a585d;
+    --primary-bordor-color: #f59410;
+    --background-color: #f59410;
+    --global-radius: 6px;
 }
 
 * {
@@ -13,49 +18,76 @@
     box-sizing: border-box;
 }
 
-body {
+/*body {
     max-width: 800px;
     min-width: 300px;
     /* Adjust width as needed, e.g., 90% or 1200px */
-    margin-left: auto;
-    margin-right: auto;
+    /*margin: 0 auto;
     /* Shorthand: margin: 0 auto; (sets top/bottom margin to 0, left/right to auto) */
-    width: 100%;
+    /*width: 100%;
     /* Ensures it takes full width on small screens */
     
-    border: 3px solid blue;
+    /*border: 3px solid blue;
     border-radius: 15px;
-}
+}*/
 
-header {
+.main-header {
     display: flex;
-    width: 100%;
-    direction: rtl;
+    flex-direction: column;
+    /* Stacks children (h1 and div) vertically */
     align-items: center;
-    justify-content: space-between;
-    color: var(--primary-color);
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Centers the items horizontally within the header */
+    padding: 1rem;
+    background-color: #f0f0f0;
+    width: 100%;
+    /* Ensure the header takes full width */
+    box-sizing: border-box;
+    /* Include padding in the element's total width/height */
 }
 
-h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin: 0;
-}
-
-h2 {
-    font-size: 2.5vw;
+.main-header h1 {
+    /* h1 is a block-level element by default, taking its own line */
+    margin: 0 0 1rem 0;
+    /* Add bottom margin for spacing to the second line */
     text-align: center;
+    /* Center the text */
+    width: 100%;
+    /* Ensure it spans the full width */
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 7vw, 3rem);
     color: var(--primary-color);
-    padding: 5px;
+    border: 3px solid red;
 }
 
+.logo-menu {
+    display: flex;
+    /* Makes the image and link sit side-by-side */
+    justify-content: center;
+    /* Centers items in the second line */
+    align-items: center;
+    /* Vertically aligns the image and link */
+    width: 100%;
+    /* Ensure the container spans the full width */
+    gap: 1rem;
+    /* Adds space between the image and the link */
+}
 
+.logo-menu img {
+    width: clamp(50px, 20vw, 200px);
+    /* Example size, use max-width for responsiveness */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.logo-menu a {
+    /* Add styling for your link as needed */
+    text-decoration: none;
+    color: blue;
+}
 /* Mobile View ***************/
 #menu {
     display: block;
-    font-size: 1.5rem;
+    font-size: clamp(2rem, 7vw, 4rem);
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
@@ -66,8 +98,8 @@ h2 {
 }
 
 #menu::before {
-    content: "🍔";
-    font-size: 3rem;
+    content: "\2630";
+    font-size: clamp(2rem, 7vw, 4rem);
 }
 
 .navigation {
@@ -91,7 +123,7 @@ h2 {
     border-radius: 10px;
     font-weight: 700;
     transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-size: clamp(1rem, 7vw, 3rem);
 }
 
 .navigation a:hover,
@@ -125,7 +157,7 @@ main {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    font-family: Baskerville, Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-secondary)
     background-image: linear-gradient(45deg,
                 #54c3fe 5%,
                 /* Highlight */
@@ -137,7 +169,6 @@ main {
                 /* Dark shade */
                 #4ebeff 95%
                 /* Another light shade */
-            );
 }
 
 figure {
@@ -154,16 +185,18 @@ figcaption {
         'Times New Roman',
         Times,
         serif;
-    font-size: .8rem;
+    font-size: font-size: clamp(1rem, 7vw, 3rem);
     color: var(--primary-color);
+    border: 3px solid green;
 
 }
 
 figure img {
-    width: 100%;
+    width: clamp(75px, 7vw, 300px);
     height: auto;
     object-fit: contain;
     /* or contain */
+    border: 3px solid red;
 }
 
 footer {
