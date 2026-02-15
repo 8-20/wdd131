@@ -196,7 +196,6 @@ figure img {
     height: auto;
     object-fit: contain;
     /* or contain */
-    border: 3px solid red;
 }
 
 footer {

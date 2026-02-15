@@ -50,6 +50,7 @@ const recipes = [
             "./images/sweet-avocado-toast.webp",
         ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."]
     },
     
     {
@@ -61,6 +62,7 @@ const recipes = [
             "./images/burrito.webp",
         ingredients: ["1 large flour tortilla", "1/2 Cup Refried Beans", "1/4 cup rice", " 1/4 cup sliced tomatoes", "1/4 avocado - sliced", "2 T Mango Chunks", "1/4 cup Peach Manago Salsa", "2 T grated cheese"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["I uwually microwave the assembled burrito for 1 minute before eating."]
     },
     {
         nameofdish: "Refried Beans",
@@ -71,6 +73,7 @@ const recipes = [
             "./images/refried-beans.webp",
         ingredients: ["2 Cups Pinto Beans (or beans of your choice)", "1 diced onion", "1 shredded carrot", "1 t salt", "2 T sugar"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["I always use my Insta-Pot to make refried beans. I am able to use inexpensive dry beans and have them ready in about 2 hours."]
     },
     {
         nameofdish: "Jackie's Killer Krab Dip",
@@ -82,6 +85,7 @@ const recipes = [
         ingredients: ["8 oz.pkg.Philadelphia cream cheese", "1 cup Miracle Whip", "1/4 cup sour cream","1 cup Krab chunks crumbled","1 T dried dill weed", "1 C shredded cheddar cheese", "2.25 oz. can chopped black olives",
             "1/4 t Vinegar based hot pepper sauce (optional)"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["Ritz crackers go great with this yummy dip."]
     },
     {
         nameofdish: "Lenticchie",
@@ -92,6 +96,7 @@ const recipes = [
             "./images/lenticchie.webp",
         ingredients: ["1 Cup lentils", "2 Cups water", "16 oz. Pasta (small shapes)", "1 carrot (diced)", "1 T celery stalk (diced)", "1  onion (diced)", "1/2 Cup Olive Oil"], 
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["This dish is not only super yummy, but is extremely inexpensive."]
     },
     {
         nameofdish: "Fish Tacos",
@@ -100,19 +105,23 @@ const recipes = [
         servings: 4,
         imageUrl:
             "./images/fish-tacos.webp",
-        ingredients: ["1 lb Fresh Salmon or other fish", "6 small corn tortillas", "1 Avocado (sliced)", "1 Tomato (sliced in strips)", "1/4 Cup diced mango chunks", "2 T Peach Mango Salsa"],
+        ingredients: ["1 lb Fresh Salmon or any other yummy fish", "6 small corn tortillas", "1 Avocado (sliced)", "1 Tomato (sliced in strips)", "1/4 Cup diced mango chunks", "2 T Peach Mango Salsa"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["These are at the top of my yummy list. "]  
     },
+
     {
         nameofdish: "Lasagna Bolognese",
-        category: "Dinner",
+        "category": "Dinner",
         preptime: "1 Hour",
         servings: 8,
         imageUrl:
             "./images/lasagne-bolognese.webp",
         ingredients: ["16 oz. Lasagna Noodles (Green if possible)", "1/2 Cup Olive Oil", "1 carrot (diced)", "1 stalk celery (diced)", "1 Onion (diced)", "1 t salt", "1 lb Hamburger", "2 8 oz. cans tomatoes (pureed)", "1 8 oz. can Tomato Sauce", "1 Qt. Milk", "1 t Black Pepper", "1/2 t nutmeg", "4 T Butter", "1/4 Cup Flour", "1 lb. Mozzarella Cheese", "1 Cup Parmasean Cheese"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["This yummy lasagna is quite a bit of work. The secret is to build thin layers of pasta, sauces, and cheese so you end up with about 7 layers."]
     },
+
     {
         nameofdish: "Prime Rib",
         location: "Dinner",
@@ -122,6 +131,7 @@ const recipes = [
             "./images/prime-rib.webp",
         ingredients: ["4 pounds prime rib roast", "1/4 Cup Butter (softened)", "1 T freshly ground black pepper", "1 t herbes de Provence", "1 pinch Kosher Salt"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["Easiest Prime Rib ever and so yummy."]
     },
 
     {
@@ -133,6 +143,7 @@ const recipes = [
             "./images/tropical-toffee-bars.webp",
         ingredients: ["1 cube Butter", "1-1/2 Cups Brown Sugar", "1 Cup + 2 T Flour", "2 eggs", "1 t Vanilla", "1 t Baking Powder", "1 Cup Coconut (shredded)", "1/2 Cup Walnuts (chopped)"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
+        bytheway: ["Small,but powerful. Beyond yummy."]
     },
 
     {
@@ -144,7 +155,8 @@ const recipes = [
             "./images/pear-ravioli.webp",
         ingredients: ["3+ Cups Flour", "1 t Kosher Salt", "1 t Olive Oil", "4 eggs1", "6 Bartlett pears, peeled and cored", "1 teaspoon nutmeg", "1 teaspoon cinnamon", "1 cup ricotta cheese", "1 cup mascarpone cheese", "1 cup pecorino-romano cheese (grated)", "1 cup parmesan cheese (grated)", "Egg wash", "1 Cube Butter", "1 Shallot (finely diced)", "1/4 Cup Fresh Sage Leaves (lightly torn)", "1 t Brown Sugar", "1 T Pistachios (finely chopped raw, peeled)", "Salt and pepper (to taste)"],
         directions: ["1. Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool."],
-    },
+        bytheway: ["Any kind of ravioli takes lots of effort,but they are definitely worth it!"]
+  r  },
     // Add more recipe objects here...
 ];
 
@@ -194,7 +206,9 @@ function createrecipeCard(filteredrecipes) {
         let preptime = document.createElement("p");
         let servings = document.createElement("p");
         let ingredients = document.createElement("p");
-        ingredients.textContent = "Ingredients:"
+        ingredients.textContent = "Ingredients:";
+        let directionbox = document.createElement("p");
+        directionbox.textContent = "Directions:";
         let ingredientsList = document.createElement("ul");
         let directions = document.createElement("textarea")
         
@@ -211,9 +225,15 @@ function createrecipeCard(filteredrecipes) {
         recipe.ingredients.forEach(ingredient => {
             let li = document.createElement("li");
             li.textContent = ingredient;
+            li.style.marginLeft = "20px"; 
+
             ingredientsList.appendChild(li);
         });
+
         directions.innerHTML = `${recipe.directions}`;
+        directions.style.fieldSizing = 'content';
+
+        ingredientsList.style.listStyleType = 'none';
         
         card.appendChild(name);
         card.appendChild(img);
@@ -222,6 +242,7 @@ function createrecipeCard(filteredrecipes) {
         card.appendChild(servings);
         card.appendChild(ingredients);
         card.appendChild(ingredientsList);
+        card.appendChild(directionbox)
         card.appendChild(directions);
         
 
