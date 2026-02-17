@@ -72,4 +72,4 @@
                 error.textContent = "Something went wrong. Please try again.";
             }
         });
-    </script>
+        

@@ -38,16 +38,30 @@
     align-items: center;
     /* Centers the items horizontally within the header */
     padding: 1rem;
-    background-color: #f0f0f0;
+   /* background-color: #f0f0f0;
     width: 100%;
     /* Ensure the header takes full width */
     box-sizing: border-box;
     /* Include padding in the element's total width/height */
+    border: 5px solid var(--primary-bordor-color)
 }
 
 .main-header h1 {
     /* h1 is a block-level element by default, taking its own line */
-    margin: 0 0 1rem 0;
+    margin: 0 1.2rem 0 0;
+    /* Add bottom margin for spacing to the second line */
+    text-align: center;
+    /* Center the text */
+    width: 100%;
+    /* Ensure it spans the full width */
+    font-family: var(--font-secondary);
+    font-size: clamp(.8rem, 7vw, 2rem);
+    color: var(--secondary-color);
+}
+
+.main-header h2 {
+    /* h1 is a block-level element by default, taking its own line */
+    margin: 0 1.2rem .6rem 0;
     /* Add bottom margin for spacing to the second line */
     text-align: center;
     /* Center the text */
@@ -56,9 +70,7 @@
     font-family: var(--font-primary);
     font-size: clamp(1rem, 7vw, 3rem);
     color: var(--primary-color);
-    border: 3px solid red;
 }
-
 .logo-menu {
     display: flex;
     /* Makes the image and link sit side-by-side */
@@ -157,19 +169,19 @@ main {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    font-family: var(--font-secondary)
-    background-image: linear-gradient(45deg,
+    font-family: var(--font-secondary);
+   /* background-image: linear-gradient(45deg,
                 #54c3fe 5%,
                 /* Highlight */
-                #f8d2cf 20%,
+                /*#f8d2cf 20%,
                 /* Light shade */
-                #b5bbd9 50%,
+              /*  #b5bbd9 50%,
                 /* Mid-tone */
-                #ffebb5 80%,
+              /*  #ffebb5 80%,
                 /* Dark shade */
-                #4ebeff 95%
+              /*  #4ebeff 95%
                 /* Another light shade */
-}
+/*)*/}
 
 figure {
     width: 100%;
@@ -185,7 +197,7 @@ figcaption {
         'Times New Roman',
         Times,
         serif;
-    font-size: font-size: clamp(1rem, 7vw, 3rem);
+    font-size: clamp(1rem, 7vw, 3rem);
     color: var(--primary-color);
     border: 3px solid green;
 

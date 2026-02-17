@@ -42,9 +42,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const recipes = [
     {
-        nameofdish: "Sweet Avocado Toast",
-        category: "Lunch",
-        preptime: "20 minutes",
+        nameOfDish: "Aba Nigeria",
+        category: "Lunch, Dinner, Desserts",
+        prepTime: "2005, August, 7",
+        servings: 11500,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+
+    {
+        nameOfDish: "Sweet Avocado Toast",
+        category: "Lunch, Dinner",
+        prepTime: "20 minutes",
         servings: 1,
         imageUrl:
             "./images/sweet-avocado-toast.webp",
@@ -52,12 +65,10 @@ const recipes = [
         directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
         bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
         contributedby: "Paul A. Scherbel"
-    },
-    
-    {
-        nameofdish: "Bean Burrito",
-        category: "Lunch, Dinner",
-        preptime: "10 minutes",
+    }, {
+        nameOfDish: "Bean Burrito",
+        category: "Dinner",
+        prepTime: "10 minutes",
         servings: 1,
         imageUrl:
             "./images/burrito.webp",
@@ -66,10 +77,11 @@ const recipes = [
         bytheway: ["I uwually microwave the assembled burrito for 1 minute before eating."],
         contributedby: "Paul A. Scherbel"
     },
+
     {
-        nameofdish: "Refried Beans",
+        nameOfDish: "Refried Beans",
         category: "Dinner",
-        preptime: "2.5 Hours",
+        prepTime: "2.5 Hours",
         servings: 25,
         imageUrl:
             "./images/refried-beans.webp",
@@ -80,13 +92,13 @@ const recipes = [
     },
 
     {
-        nameofdish: "Jackie's Killer Krab Dip",
-        category: "Snack",
-        preptime: "15 minutes",
+        nameOfDish: "Jackie's Killer Krab Dip",
+        category: "Snacks",
+        prepTime: "15 minutes",
         servings: 50,
         imageUrl:
             "./images/jackies-killer-krab-dip.webp",
-        ingredients: ["8 oz.pkg.Philadelphia cream cheese", "1 cup Miracle Whip", "1/4 cup sour cream","1 cup Krab chunks crumbled","1 T dried dill weed", "1 C shredded cheddar cheese", "2.25 oz. can chopped black olives",
+        ingredients: ["8 oz.pkg.Philadelphia cream cheese", "1 cup Miracle Whip", "1/4 cup sour cream", "1 cup Krab chunks crumbled", "1 T dried dill weed", "1 C shredded cheddar cheese", "2.25 oz. can chopped black olives",
             "1/4 t Vinegar based hot pepper sauce (optional)"],
         directions: ["Mince the Krab and mix everything together. Adjust quantities to taste. Nothing to it."],
         bytheway: ["Ritz crackers go great with this yummy dip."],
@@ -94,22 +106,22 @@ const recipes = [
     },
 
     {
-        nameofdish: "Lenticchie",
+        nameOfDish: "Lenticchie",
         category: "Lunch, Dinner",
-        preptime: "30 Minutes",
+        prepTime: "30 Minutes",
         servings: 6,
         imageUrl:
             "./images/lenticchie.webp",
-        ingredients: ["1 Cup lentils", "2 Cups water", "16 oz. Pasta (small shapes)", "1 carrot (diced)", "1 T celery stalk (diced)", "1  onion (diced)", "1/2 Cup Olive Oil", "1 t Salt", "1 t Curry Powder"], 
+        ingredients: ["1 Cup lentils", "2 Cups water", "16 oz. Pasta (small shapes)", "1 carrot (diced)", "1 T celery stalk (diced)", "1  onion (diced)", "1/2 Cup Olive Oil", "1 t Salt", "1 t Curry Powder"],
         directions: ["Cover lentils with 2 cups of water and cook until tender. (depending on size of lentils between ½ and 1 hour)Heat on almost high 1/2 cup olive oil in a skillet, cook carrot 3 minutes first and add other two vegetables and cook another 3 minutes.  Add this to your lentils as they cook. 10 minutes before your lentils are tender start cooking the pasta in a separate pan until it is almost tender. (al dente)   Pour out most but not all of your pasta water and add the lentils with its liquid to the drained pasta.  Cook for another minute or two.  I season with salt and curry powder. Do not drain as it gets absorbed into the mixture the longer it sits.  It makes a big batch and is great for leftovers."],
         bytheway: ["This dish is not only super yummy, but is extremely inexpensive."],
         contributedby: "Paul A. Scherbel"
     },
 
     {
-        nameofdish: "Fish Tacos",
+        nameOfDish: "Fish Tacos",
         category: "Lunch, Dinner",
-        preptime: "30 Minutes",
+        prepTime: "30 Minutes",
         servings: 4,
         imageUrl:
             "./images/fish-tacos.webp",
@@ -120,12 +132,12 @@ const recipes = [
     },
 
     {
-        nameofdish: "Lasagna Bolognese",
-        "category": "Dinner",
-        preptime: "1 Hour",
+        nameOfDish: "Lasagna Bolognese",
+        category: "Dinner",
+        prepTime: "1 Hour",
         servings: 8,
         imageUrl:
-            "./images/lasagne-bolognese.webp",
+            "./images/lasagna-bolognese.webp",
         ingredients: ["16 oz. Lasagna Noodles (Green if possible)", "1/2 Cup Olive Oil", "1 carrot (diced)", "1 stalk celery (diced)", "1 Onion (diced)", "1 t salt", "1 lb Hamburger", "2 8 oz. cans tomatoes (pureed)", "1 8 oz. can Tomato Sauce", "1 Qt. Milk", "1 t Black Pepper", "1/2 t nutmeg", "4 T Butter", "1/4 Cup Flour", "1 lb. Mozzarella Cheese", "1 Cup Parmasean Cheese"],
         directions: ["RED SAUCE: Heat olive oil to almost smoking and add diced carrots first while you cut celery and onion. Cook carrot 3 minutes then add other vegetables. Add salt and hamburger to cooked vegetables and brown all together about three minutes. Add canned tomatoes with juice that have been blended lightly. Cook for 25 minutes. Add tomato sauce and cook 10 more minutes.\n \nWHITE SAUCE: Bring to a boil.Sprinkle black pepper and nutmeg on top of milk as you bring it to a boil.Stir constantly to avoid scorching. As it starts to boil add soft butter which has already been mixed with flour. Turn down heat to medium and continue stirring.Cook for 2 - 3 minutes until sauce thickens, and then remove from heat.\n \nASSEMBLY: Put a spoonful of red sauce and a spoonful of white sauce on the bottom of a 9 in. X 13 in. baking pan. Add a layer of uncooked lasagna noodles. Add a thin layer of mozzarella cheese, red sauce and white sauce to barely cover the noodles. Continue similar layers until pan is nearly full. Last layer is mozzarella cheese, red sauce, white sauce and topped with parmesan cheese. Bake at 375 degrees for 20 - 25 minutes or until top is slightly brown."],
         bytheway: ["This yummy lasagna is quite a bit of work. The secret is to build thin layers of pasta, sauces, and cheese so you end up with about 7 layers."],
@@ -133,9 +145,9 @@ const recipes = [
     },
 
     {
-        nameofdish: "Prime Rib",
-        location: "Dinner",
-        preptime: "3.5 Hours",
+        nameOfDish: "Prime Rib",
+        category: "Dinner",
+        prepTime: "3.5 Hours",
         servings: 6,
         imageUrl:
             "./images/prime-rib.webp",
@@ -146,9 +158,9 @@ const recipes = [
     },
 
     {
-        nameofdish: "Tropical Toffee Bars",
-        category: "Dessert",
-        preptime: "30 Minutes",
+        nameOfDish: "Tropical Toffee Bars",
+        category: "Desserts",
+        prepTime: "30 Minutes",
         servings: 12,
         imageUrl:
             "./images/tropical-toffee-bars.webp",
@@ -159,9 +171,9 @@ const recipes = [
     },
 
     {
-        nameofdish: "Pear Ravioli",
+        nameOfDish: "Pear Ravioli",
         category: "Dinner",
-        preptime: "2 Hours",
+        prepTime: "2 Hours",
         servings: 6,
         imageUrl:
             "./images/pear-ravioli.webp",
@@ -169,58 +181,170 @@ const recipes = [
         directions: ["DOUGH: Mix in mixer or by hand flour, salt, oil, eggs, and 1–2 tbsp. water, until dough forms. Transfer dough to a lightly floured surface; knead until dough is elastic: 8–10 minutes. Transfer to a greased bowl and cover with plastic wrap; let rest 1 hour at room temperature.\n \nSTUFFING: Finely chop the pears (or grate on a box grater). Add the pears to a skillet drizzled lightly with olive oil and sprinkle with the spices. Cook until softened, about 5 minutes. Remove from heat and allow to cool. Combine the pears with the cheeses and season with salt and pepper.\n \nASSEMBLY: Divide the dough into 4 pieces. Using a pasta machine or rolling pin, roll the dough out to the second-to-last setting (about 1/16-inch or 0.6mm thickness). Place teaspoon-sized mounds of filling 1-2 inches apart on a sheet of pasta. Lightly brush egg wash around the filling, then place a second sheet of pasta on top. Press firmly around each mound to remove air pockets, sealing the ravioli. Use a ravioli cutter, pizza wheel, or knife to cut into squares.\n \nCOOKING: Boil the ravioli in gently simmering salted water until they float and become translucent, about 2 minutes.\n \nSAUCE: While the ravioli are cooking, make the sauce by melting the butter over medium-low heat in a skillet. Stir or swirl the butter in the pan frequently. As soon as the edges of the butter start to turn golden brown, reduce the heat to very low and add in the shallot, sage, and sugar. Cook for 1 minute. Turn off the heat and add the pistachios. Season, to taste, with salt and pepper. Toss the cooked ravioli in the butter sauce and serve immediately with additional grated cheese, if desired."],
         bytheway: ["Any kind of ravioli takes lots of effort,but they are definitely worth it!"],
         contributedby: "Paul A. Scherbel"
-   },
+    },
+
+    {
+        nameOfDish: "Manti Utah",
+        category: "Lunch, Dinner Snacks",
+        prepTime: "1888, May, 21",
+        servings: 74792,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+    {
+        nameOfDish: "Payson Utah",
+        category: "Beverages, Snacks, Dinner, Lunch",
+        prepTime: "2015, June, 7",
+        servings: 96630,
+        imageUrl:
+            "./images/payson-utah.webp",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+    {
+        nameOfDish: "Yigo Guam",
+        category: "Dinner, Lunch",
+        prepTime: "2020, May, 2",
+        servings: 6861,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+    {
+        nameOfDish: "Washington D.C.",
+        category: "Lunch, Snack",
+        prepTime: "1974, November, 19",
+        servings: 156558,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+    {
+        nameOfDish: "Lima Perú",
+        category: "Snack, beverages",
+        prepTime: "1986, January, 10",
+        servings: 9600,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+    {
+        nameOfDish: "Mexico City Mexico",
+        category: "lunch, dinner",
+        prepTime: "1983, December, 2",
+        servings: 116642,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+    {
+        nameOfDish: "Rome Italy Temple",
+        category: "desserts, snack, ",
+        prepTime: "2019, March, 10-12",
+        servings: 41010,
+        imageUrl:
+            "./images/rome-italy-temple-3548.webp",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+
+    {
+        nameOfDish: "Star Valley Wyoming 2",
+        category: "dinner, lunch",
+        prepTime: "2016, October, 30",
+        servings: 18609,
+        imageUrl:
+            "./images/star-valley-wy.webp",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
+
+    {
+        nameOfDish: "Los Angeles, California",
+        category: "desserts",
+        prepTime: "1956, March, 11-14",
+        servings: 190614,
+        imageUrl:
+            "./images/los-angeles-california.webp",
+        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
+        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
+        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
+        contributedby: "Paul A. Scherbel"
+    },
     // Add more recipe objects here...
 ]; 
 
-createrecipeCard(recipes);
+
+createRecipeCard(recipes);
 
 // Display all recipes
-const homeLink = document.querySelector("#home");
-homeLink.addEventListener("click", () => {
-    // createrecipeCard(recipes.filter(recipe => parseInt(recipe.preptime.split(",")[0]) > 0));
-    createrecipeCard(recipes)
+const dinnerLink = document.querySelector("#dinner");
+dinnerLink.addEventListener("click", () => {
+    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Dinner") || recipe.category.includes("dinner")));
 });
 
 
-// Filter for recipes preptime before 1900
-const oldLink = document.querySelector("#old");
-oldLink.addEventListener("click", () => {
-    createrecipeCard(recipes.filter(recipe => parseInt(recipe.preptime.split(",")[0]) < 1900)); 
+// Filter for temples dedicated before 1900
+const lunchLink = document.querySelector("#lunch");
+lunchLink.addEventListener("click", () => {
+    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Lunch") || recipe.category.includes("lunch")));
 });
 
 
-// Filter for recipes preptime after 2000
-const newLink = document.querySelector("#new");
-newLink.addEventListener("click", () => {
-    createrecipeCard(recipes.filter(recipe => parseInt(recipe.preptime.split(",")[0]) > 2000));
+// Filter for temples dedicated after 2000
+const dessertsLink = document.querySelector("#desserts");
+dessertsLink.addEventListener("click", () => {
+    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Desserts") || recipe.category.includes("desserts")));
 })
 
-// Filter for recipes larger in servings than 90,000 square  feet
-const largeLink = document.querySelector("#large");
-largeLink.addEventListener("click", () => {
-    createrecipeCard(recipes.filter(recipe => parseInt(recipe.servings) > 90000));
+// Filter for temples larger in area than 90,000 square  feet
+const beveragesLink = document.querySelector("#beverages");
+beveragesLink.addEventListener("click", () => {
+    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Beverages") || recipe.category.includes("beverages")));
+})
+
+// Filter for temples smaller in area than 10,000 square  feet
+const snacksLink = document.querySelector("#snacks");
+snacksLink.addEventListener("click", () => {
+    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Snacks") || recipe.category.includes("snacks")));
 });
 
-// Filter for recipes smaller in servings than 10,000 square  feet
-const smallLink = document.querySelector("#small");
-smallLink.addEventListener("click", () => {
-    createrecipeCard(recipes.filter(recipe => parseInt(recipe.servings) < 10000));
-});
 
-
-function createrecipeCard(filteredrecipes) {
+function createRecipeCard(filteredRecipes) {
     document.querySelector(".res-grid").innerHTML = "";
-    filteredrecipes.forEach(recipe => {
+    filteredRecipes.forEach(recipe => {
         let card = document.createElement("section");
         let img = document.createElement("img");
         let name = document.createElement("h3");
         let category = document.createElement("p");
-        let preptime = document.createElement("p");
+        let prepTime = document.createElement("p");
         let servings = document.createElement("p");
         let ingredients = document.createElement("p");
         ingredients.textContent = "Ingredients:";
         let ingredientsList = document.createElement("ul");
+        let diretions = document.createElement("textarea");
         let directionbox = document.createElement("p");
         directionbox.textContent = "Directions:";
         let directions = document.createElement("textarea");
@@ -228,21 +352,22 @@ function createrecipeCard(filteredrecipes) {
         bythewaybox.textContent = "By the way...";
         let bytheway = document.createElement("textarea");
         let contributedby = document.createElement("h4");
-        
 
-        name.textContent = recipe.nameofdish;
+
+        name.textContent = recipe.nameOfDish;
         img.setAttribute("src", recipe.imageUrl);
-        img.setAttribute("alt", `${recipe.nameofdish} Name of Dish`);
+        img.setAttribute("alt", `${recipe.nameOfDish} recipe`);
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "400");
         img.setAttribute("height", "250");
         category.innerHTML = `<span class="label">Category:</span> ${recipe.category}`;
-        preptime.innerHTML = `<span class="label">Preptime:</span> ${recipe.preptime}`;
+        prepTime.innerHTML = `<span class="label">Preperation Time:</span> ${recipe.prepTime}`;
         servings.innerHTML = `<span class="label">Servings:</span> ${recipe.servings}`;
+
         recipe.ingredients.forEach(ingredient => {
             let li = document.createElement("li");
             li.textContent = ingredient;
-            li.style.marginLeft = "20px"; 
+            li.style.marginLeft = "20px";
 
             ingredientsList.appendChild(li);
         });
@@ -251,27 +376,35 @@ function createrecipeCard(filteredrecipes) {
         name.style.fontSize = "1.5rem";
         name.style.color = "#205915";
 
+        category.style.fontFamily = "Baskerville, Times New Roman";
+        category.style.fontSize = "1.5rem";
+        category.style.color = "#0a585d";
+
         ingredients.style.fontSize = "1.3rem";
         ingredients.style.color = "#880000";
- 
+
         ingredientsList.style.listStyleType = 'none';
         ingredientsList.style.fontFamily = "Pacifico, cursive";
 
         directions.innerHTML = `${recipe.directions}`;
         directions.style.fieldSizing = 'content';
         directions.style.fontFamily = "Pacifico, cursive";
+        directions.style.padding = "5px 10px";
 
         bytheway.innerHTML = `${recipe.bytheway}`;
         bytheway.style.fieldSizing = 'content';
         bytheway.style.fontFamily = "Pacifico, cursive";
+        bytheway.style.padding = "5px 10px";
 
         contributedby.innerHTML = `<span class="label">Contributed By:</span> ${recipe.contributedby}`;
         contributedby.style.marginBottom = "30px";
-        
+
+
+
         card.appendChild(name);
         card.appendChild(img);
         card.appendChild(category);
-        card.appendChild(preptime);
+        card.appendChild(prepTime);
         card.appendChild(servings);
         card.appendChild(ingredients);
         card.appendChild(ingredientsList);
@@ -280,7 +413,7 @@ function createrecipeCard(filteredrecipes) {
         card.appendChild(bythewaybox);
         card.appendChild(bytheway);
         card.appendChild(contributedby);
-        
+
 
         document.querySelector(".res-grid").appendChild(card);
     });
