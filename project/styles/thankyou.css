@@ -1,0 +1,40 @@
+:root {
+    --font-primary: Pacifico, cursive;
+    --font-secondary: Baskerville, Georgia, 'Times New Roman', serif;
+    --primary-color: #205915;
+    --secondary-color: #880000;
+    --tertiary-color: #0a585d;
+    --accent-color: #f59410;
+    --global-radius: 15px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid var(--primary-bordor-color);
+    border-radius: var(--global-radius);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--global-radius);
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    ;
+}

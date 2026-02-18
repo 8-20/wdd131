@@ -22,20 +22,17 @@
     <header>
         <a href="index.html">
             <figure>
-                <img src="./images/recipe-card.webp" alt="Stylized recipe card">
+                <img src="./images/recipe-card.webp" loading="lazy" alt="Stylized recipe card" width="200" height="300">
                 <figcaption>Click to return to the Home page.</figcaption>
             </figure>
         </a>
 
         <a href="view-recipes.html">
             <figure>
-                <img src="./images/add-button-up.webp" alt="Stylized button to view recipes added to way2yummy.com">
+                <img src="./images/add-button-up.webp" loading="lazy" alt="Stylized button to view recipes added to way2yummy.com" width="256" height="256">
                 <figcaption>Click to return to view more yummy recipes.</figcaption>
             </figure>
         </a>
-        <div class="button">
-            <img src="./images/add-button-up.webp" alt="stylized button for adding recipes" width="256">
-        </div>
 
         <div>
             <h1>way2yummy.com</h1>
@@ -44,17 +41,17 @@
     </header>
 
     <main>
-        <form method="get" action="review.html" class="wf1">
+        <form method="get" action="thankyou.html" class="wf1">
             <fieldset>
-                <div class="name">
-                    <label for="name-input">What <span class="my-url">yummy</span>  thing are we adding?</label>
-                    <input type="text" id="name-input" name="name">
+                <div class="recipe">
+                    <label for="recipe-name">What <span class="my-url">yummy</span>  thing are we adding?</label>
+                    <input type="text" id="recipe-name" name="recipe-name">
                 </div>
 
                 <div>
                     <label for="image-upload">Select an image you have on file or take a photo:</label>
                     <input type="file" id="image-upload" accept="image/*" capture="user">
-                    <img id="image-preview" src="#" alt="Image preview" style="max-width: 300px; max-height: 300px; display: none;">
+                    <img id="image-preview" src="#" alt="Image preview" style="max-width: 300px; max-height: 300px; display: none;" loading="lazy">
                 </div>
 
                 <div class="features">
@@ -80,12 +77,12 @@
                     
                     <div class="checkbox-align">    
                         <input type="checkbox" id="beverages-checkbox" name="beverages" value="yes">
-                        <label for="beverage-checkbox">Beverages</label>
+                        <label for="beverages-checkbox">Beverages</label>
                     </div>
 
                     <div class="checkbox-align">
-                        <input type="checkbox" id="snacks-checkbox" name="snacks" value="yes">
-                        <label for="snack-checkbox">Snacks</label>
+                        <input type="checkbox" id="snacks-checkbox" name="snacks" value="yes" >
+                        <label for="snacks-checkbox">Snacks</label>
                     </div>
                 
                 </div>

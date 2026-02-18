@@ -66,7 +66,7 @@ header h1 {
     text-align: center;
     flex: 1 1 100px;
     font-family: var(--font-primary);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1rem, 5vw, 2rem);
     color: #2c791d;
     background-color: transparent;
 }
@@ -104,9 +104,7 @@ main {
 .look-button {
     display: inline-block;
     width: 256px;
-    /* Match your image width */
     height: 256px;
-    /* Adjust to your image height */
     background-image: url('../images/look-button-up.webp');
     background-size: contain;
     background-repeat: no-repeat;
@@ -116,15 +114,12 @@ main {
 
 .look-button:hover {
     background-image: url('../images/look-button-down.webp');
-    /* New image path */
 }
 
 .add-button {
     display: inline-block;
     width: 256px;
-    /* Match your image width */
     height: 256px;
-    /* Adjust to your image height */
     background-image: url('../images/add-button-up.webp');
     background-size: contain;
     background-repeat: no-repeat;
@@ -134,9 +129,25 @@ main {
 
 .add-button:hover {
     background-image: url('../images/add-button-down.webp');
-    /* New image path */
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 30px);
+    border: 5px solid var(--primary-bordor-color);
+    border-radius: var(--global-radius);
+    text-align: center;
+    font-size: clamp(.5rem, 5vw, 1rem);
+    width: 95%;
+    margin: 20px 10px;
+}
+
+.ref-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: clamp(.5rem, 5vw, 1rem);
+}
 /* ===== Mobile Optimization ===== */
 @media (max-width: 600px) {
     header {

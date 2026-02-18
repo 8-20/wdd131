@@ -54,9 +54,10 @@ h1 {
     margin-right: 20px;
 }
 
-.required {
-    font-size: 1.5rem;
-    color: var(--primary-border-color);
+figcaption {
+    font-family: var(--font-primary);
+    font-size: .5rem 5vw 3rem;
+    color: var(--primary-color);
 }
 
 .my-url {
@@ -64,13 +65,13 @@ h1 {
     color: var(--primary-color)
 }
 
-.name label {
+.recipe label {
     display: inline;
     margin-top: 3rem;
     margin-bottom: 100px;
 }
 
-.name input {
+.recipe input {
     background-color: var(--background-color);
     border: 3px solid var(--secondary-color);
     border-radius: var(--global-radius);
@@ -121,8 +122,8 @@ h1 {
 
 .checkbox input[type="checkbox"] {
     appearance: none;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     margin-right: 20px;
     border-radius: var(--global-radius);
     background-color: #ffffff;
@@ -154,22 +155,25 @@ h1 {
 
 .preptime input {
     width: 25%;
+    height: 40px;
     border: 3px solid var(--tertiary-color);
     border-radius: var(--global-radius);
+    margin-bottom: 20px;
 }
 
 .servings input {
     width: 10%;
+    height: 40px;
     border: 3px solid var(--secondary-color);
     border-radius: var(--global-radius);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .ingredients {
     display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .ingredients label {
@@ -181,6 +185,7 @@ h1 {
     border: 3px solid var(--primary-color);
     border-radius: var(--global-radius);
     width: 50%;
+    height: 50px;
 }
 
 .directions {
@@ -200,6 +205,7 @@ h1 {
     border: 3px solid var(--secondary-color);
     border-radius: var(--global-radius);
     width: 50%;
+    height: 50px;
     padding: 5px;
 }
 
@@ -218,7 +224,29 @@ h1 {
 .bytheway textarea {
     border: 3px solid var(--primary-color);
     width: 50%;
+    height: 50px;
     border: 3px solid var(--tertiary-color);
+    border-radius: var(--global-radius);
+    padding: 5px;
+}
+
+.contributor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contributor label {
+    font-weight: bold;
+
+}
+
+.contributor input {
+    border: 3px solid var(--primary-color);
+    width: 50%;
+    height: 50px;
+    border: 3px solid var(--primary-color);
     border-radius: var(--global-radius);
     padding: 5px;
 }

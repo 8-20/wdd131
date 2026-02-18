@@ -42,19 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const recipes = [
     {
-        nameOfDish: "Aba Nigeria",
-        category: "Lunch, Dinner, Desserts",
-        prepTime: "2005, August, 7",
-        servings: 11500,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-
-    {
         nameOfDish: "Sweet Avocado Toast",
         category: "Lunch, Dinner",
         prepTime: "20 minutes",
@@ -183,117 +170,6 @@ const recipes = [
         contributedby: "Paul A. Scherbel"
     },
 
-    {
-        nameOfDish: "Manti Utah",
-        category: "Lunch, Dinner Snacks",
-        prepTime: "1888, May, 21",
-        servings: 74792,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    {
-        nameOfDish: "Payson Utah",
-        category: "Beverages, Snacks, Dinner, Lunch",
-        prepTime: "2015, June, 7",
-        servings: 96630,
-        imageUrl:
-            "./images/payson-utah.webp",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    {
-        nameOfDish: "Yigo Guam",
-        category: "Dinner, Lunch",
-        prepTime: "2020, May, 2",
-        servings: 6861,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    {
-        nameOfDish: "Washington D.C.",
-        category: "Lunch, Snack",
-        prepTime: "1974, November, 19",
-        servings: 156558,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    {
-        nameOfDish: "Lima Perú",
-        category: "Snack, beverages",
-        prepTime: "1986, January, 10",
-        servings: 9600,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    {
-        nameOfDish: "Mexico City Mexico",
-        category: "lunch, dinner",
-        prepTime: "1983, December, 2",
-        servings: 116642,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    {
-        nameOfDish: "Rome Italy Temple",
-        category: "desserts, snack, ",
-        prepTime: "2019, March, 10-12",
-        servings: 41010,
-        imageUrl:
-            "./images/rome-italy-temple-3548.webp",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-
-    {
-        nameOfDish: "Star Valley Wyoming 2",
-        category: "dinner, lunch",
-        prepTime: "2016, October, 30",
-        servings: 18609,
-        imageUrl:
-            "./images/star-valley-wy.webp",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-
-    {
-        nameOfDish: "Los Angeles, California",
-        category: "desserts",
-        prepTime: "1956, March, 11-14",
-        servings: 190614,
-        imageUrl:
-            "./images/los-angeles-california.webp",
-        ingredients: ["2 slices of multi-grain bread", "1 T Cream Cheese", "1 T your favorite jam", "1 avocado", "2 eggs"],
-        directions: ["Lay two slices on your favorite bread on a plate. Spread cream cheese and jam on each slice. Cut an avocado into slices and arrange half of the slices on each slice of bread. Fry two eggs and place one on top of each slice of bread. Prepare to enjoy a very yummy sandwich."],
-        bytheway: ["This sandwich is super yummy, but difficult to eat except with a knife and fork. I usually cut the two open-faced sandwiches into 1/2 inch squares before attempting to eat them."],
-        contributedby: "Paul A. Scherbel"
-    },
-    // Add more recipe objects here...
 ]; 
 
 
