@@ -19,9 +19,8 @@ body {
     margin: 0;
 }
 
-/* ===== Page Container ===== */
 body {
-    max-width: 1200px;
+    max-width: 960px;
     margin: auto;
     /*padding: clamp(12px, 3vw, 24px);*/
     border: 20px solid transparent;
@@ -32,14 +31,14 @@ body {
             #f59410) 3;
 }
 
-/* ===== Header ===== */
 header {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex: 1 1 100%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    /*gap: clamp(1rem, 4vw, 2.5rem);*/
-    padding-bottom: 1rem;
+    gap: clamp(1rem, 4vw, 2.5rem);
+    margin-bottom: 5px;
     border-bottom: 10px solid transparent;
     border-image: linear-gradient(to right,
             #205915,
@@ -66,34 +65,58 @@ header h1 {
     text-align: center;
     flex: 1 1 100px;
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 5vw, 3rem);
     color: #2c791d;
     background-color: transparent;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+        /* Creates as many columns as possible, each with a minimum width of 200px and a maximum of 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-gap: 1rem;
    background-image: repeating-conic-gradient(rgba(217, 217, 217, 0.4) 0% 25%,
         rgba(255, 255, 255, 0.1) 25% 50%);
-        background-size: 100px 100px;
+    background-size: 100px 100px;
         /* Adjust the5 size of the squares as needed */
     }
 
     .kitchen {
         grid-column: span 2;
         grid-row: span 2;
+        max-width: 100%;
+        height: auto;
+        margin-left: 5px;
+    
+    }
+
+    .kitchen img,
+    .add img,
+    .view img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        object-fit: contain;
     }
 
     .instructions {
         grid-column: 3 / span 2;
         grid-row: span 1;
         font-family: var(--font-secondary);
-        font-size: 1.2rem;
+        /*font-size: 1.2rem;*/
         color: var(--secondary-color);
         padding: 15px;
+        font-size: clamp(.8rem, 2vw + 0.5rem, 1.2rem);
+            /* Scales smoothly */
+            line-height: 1.5;
+            /* Better readability */
+            max-width: 70ch;
+            /* Limits line length to ~70 characters for readability */
+            margin: 0 auto 1rem auto;
+            /* Centers the paragraph */
+            padding: 0 10px;
+            /* Ensures text doesn't touch screen edges */
     }
 
     .my-url {
@@ -101,57 +124,46 @@ main {
         color: var(--primary-color)
     }
 
-.look-button {
+.view {
+    /*display: inline-block;*/
+    max-width: 100%;
+    height: auto;
+   /* display: block;*/
+}
+
+.view :hover {
+    border: 5px solid transparent;
+}
+
+.add {
     display: inline-block;
-    width: 256px;
-    height: 256px;
-    background-image: url('../images/look-button-up.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: 5px solid white;
-    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    /*display: block;*/
 }
 
-.look-button:hover {
-    background-image: url('../images/look-button-down.webp');
-}
-
-.add-button {
-    display: inline-block;
-    width: 256px;
-    height: 256px;
-    background-image: url('../images/add-button-up.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: 5px solid white;
-    border-radius: 100px;
-}
-
-.add-button:hover {
-    background-image: url('../images/add-button-down.webp');
+.add :hover {
+    border: 5px solid transparent;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 30px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1rem;
+        background-image: repeating-conic-gradient(rgba(217, 217, 217, 0.4) 0% 25%,
+                rgba(255, 255, 255, 0.1) 25% 50%);
+        background-size: 100px 100px;
+        /* Adjust the5 size of the squares as needed */
+    grid-template-rows: repeat(4, 20px);
     border: 5px solid var(--primary-bordor-color);
     border-radius: var(--global-radius);
     text-align: center;
     font-size: clamp(.5rem, 5vw, 1rem);
-    width: 95%;
+    width: 100%;
     margin: 20px 10px;
 }
 
 .ref-button {
     display: inline-block;
     text-decoration: none;
-    font-size: clamp(.5rem, 5vw, 1rem);
-}
-/* ===== Mobile Optimization ===== */
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
-
 }

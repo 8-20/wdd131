@@ -1,14 +1,3 @@
-// ************************Javascript for Hamburger Button**********************
-
-//const mainnav = document.querySelector('.navigation')
-//const hambutton = document.querySelector('#menu');
-
-// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
-//hambutton.addEventListener('click', () => {
-  //  mainnav.classList.toggle('show');
-   // hambutton.classList.toggle('show');
-//});
-
 // **************VIEW NUMBER OF VISITS IN LOCAL STORAGE******************
 // Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");
@@ -17,9 +6,16 @@ const visitsDisplay = document.querySelector(".visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 // Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
-if (numVisits !== 0) {
+//if (numVisits !== 0) {
+//    visitsDisplay.textContent = numVisits;
+//} else {
+//    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+//}
+
+if (numVisits !== null && numVisits !== 0 && numVisits !== undefined) {
     visitsDisplay.textContent = numVisits;
 } else {
+    // Handles cases where it is 0 or explicitly null
     visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
 

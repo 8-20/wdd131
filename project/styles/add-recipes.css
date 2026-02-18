@@ -17,47 +17,74 @@
 }
 
 body {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid transparent;
-    border-width: 20px;
-    border-image: linear-gradient(to right, #2c791d, #c20000, #157170, #f59410) 3;
-
+    max-width: 960px;
+    margin: 0 auto;
+    /*padding: clamp(12px, 3vw, 24px);*/
+    border: 20px solid transparent;
+    border-image: linear-gradient(to right,
+            #2c791d,
+            #c20000,
+            #157170,
+            #f59410) 3;
 }
-
 header {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    flex: 1 1 100%;
-    border: 5px solid transparent;
-    border-width: 20px;
-    border-image: linear-gradient(to right, #2c791d, #c20000, #157170, #f59410) 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px;
+    grid-gap: 10px;
     background-image: repeating-conic-gradient(rgba(217, 217, 217, 0.4) 0% 25%,
-                rgba(255, 255, 255, 0.1) 25% 50%);
-        background-size: 100px 100px;
-    margin-bottom: 10px;
+            rgba(255, 255, 255, 0.1) 25% 50%);
+    background-size: 100px 100px;
+    /* Adjust the5 size of the squares as needed */
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(to right,
+            #205915,
+            #880000,
+            #0a585d,
+            #f59410) 3;
+    background-image: repeating-conic-gradient(rgba(217, 217, 217, 0.4) 0% 25%,
+            rgba(255, 255, 255, 0.1) 25% 50%);
+    background-size: 100px 100px;
+    /* Adjust the5 size of the squares as needed */
 }
 
-.button {
-    border: 5px solid transparent;
-    border-radius: 100px;
+.home img {
+    max-width: 100%;
+    height: auto;
+    padding: clamp(10px, 2vw, 20px);
+    background-color: transparent;
+    margin: 10px;
 }
 
+.view img {
+    max-width: 75%;
+    height: auto;
+    padding: clamp(10px, 2vw, 20px);
+    background-color: transparent;
+    margin: 10px;
+}
 
-h1 {
+.url {
+    grid-column: span 2;
+    justify-self: center;
+    /*width: 100%;*/
     font-family: var(--font-primary);
-    font-size: clamp(.7rem 5vw 2.5rem);
+    font-size: 1.5rem;
     color: var(--primary-color);
-    margin-right: 20px;
 }
 
-figcaption {
+.view figcaption {
     font-family: var(--font-primary);
-    font-size: .5rem 5vw 3rem;
+    font-size: .5rem 5vw 1rem;
     color: var(--primary-color);
+    margin-top: -60px;
+}
+
+.home figcaption {
+    font-family: var(--font-primary);
+        font-size: .5rem 5vw 1rem;
+        color: var(--primary-color);
+        margin-top: -40px;
 }
 
 .my-url {
