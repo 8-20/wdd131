@@ -265,6 +265,12 @@ function createRecipeCard(filteredRecipes) {
         img.setAttribute("margin", "5px");
         img.style.aspectRatio = '1 / 1';
 
+        
+        directions.setAttribute("id", "directions");
+        directions.setAttribute("name", "directions");
+        bytheway.setAttribute("id", "bytheway");
+        bytheway.setAttribute("name", "bytheway");
+
         category.innerHTML = `<span class="label">Category:</span> ${recipe.category}`;
         prepTime.innerHTML = `<span class="label">Preperation Time:</span> ${recipe.prepTime}`;
         servings.innerHTML = `<span class="label">Servings:</span> ${recipe.servings}`;
