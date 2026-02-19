@@ -76,14 +76,14 @@ header {
 
 .view figcaption {
     font-family: var(--font-primary);
-    font-size: .5rem 5vw 1rem;
+    font-size: clamp(.5rem, 5vw, 1rem);
     color: var(--primary-color);
     margin-top: -60px;
 }
 
 .home figcaption {
     font-family: var(--font-primary);
-        font-size: .5rem 5vw 1rem;
+        font-size: clamp(.5rem, 5vw, 1rem);
         color: var(--primary-color);
         margin-top: -40px;
 }
@@ -109,13 +109,13 @@ header {
     width: 100%;
     max-width: 400px;
     font-family: var(--font-family);
-    font-size: clamp (.5rem 5vw 1rem);
+    font-size: clamp (.5rem, 5vw, 1rem);
 }
 
 .features {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: clamp (.5rem 5vw 1rem);
+    font-size: clamp (.5rem, 5vw, 1rem);
     grid-auto-rows: 45px;
     margin-bottom: 25px;
 }
