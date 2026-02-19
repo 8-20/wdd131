@@ -11,33 +11,6 @@ hambutton.addEventListener('click', () => {
 });
 
 
-// **********************Format Footer************************************
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the span element by its ID
-    const lastModifiedSpan = document.getElementById('lastModifiedDate');
-
-    // Get the last modified date of the document
-    const lastModified = document.lastModified;
-
-    // Create a new Date object from the last modified string
-    const dateObject = new Date(lastModified);
-
-    // Format the date for display (e.g., using toLocaleDateString and toLocaleTimeString)
-    const formattedDate = dateObject.toLocaleDateString() + ' ' + dateObject.toLocaleTimeString();
-
-    // Update the innerHTML of the span with the formatted date
-    if (lastModifiedSpan) {
-        lastModifiedSpan.textContent = formattedDate;
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const yearSpan = document.getElementById("currentYear");
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
-});
-
-
 //************Javescript for filtered-recipes.html project********************************
 
 const recipes = [
@@ -170,41 +143,92 @@ const recipes = [
         contributedby: "Paul A. Scherbel"
     },
 
+    {
+        nameOfDish: "Virgin Piña Colada",
+        category: "Beverages",
+        prepTime: "10 minutes",
+        servings: 4,
+        imageUrl:
+            "./images/virgin-pina-colada.webp",
+        ingredients: ["6 Cups Pineapple Juice", "2.25 Cups Cream of Coconut", "12 Cups Ice", "Pineapple Wedges (for garnish)", "Maraschino Cherries (also for Garnish)"],
+        directions: ["Pour the pineapple juice and cream of coconut into a high-powered blender. Add the ice. Blend for 30-60 seconds until smooth."],
+        bytheway: ["Divide between 3-4 glasses. This makes about 5 cups of pina colada which is about 10 ounces per person if divided between 4 people."],
+        contributedby: "Amy Nash (From her website)"
+    },
+
 ]; 
 
 
 createRecipeCard(recipes);
 
-// Display all recipes
+// Filter for dinner items
 const dinnerLink = document.querySelector("#dinner");
+const categoryHeader = document.querySelector("#category-title");
+
 dinnerLink.addEventListener("click", () => {
-    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Dinner") || recipe.category.includes("dinner")));
+    const categoryName = "Dinner";
+    categoryHeader.textContent = `Here are some yummy suggestions for: ${categoryName}`;
+    `Category: ${categoryName}`;
+
+    createRecipeCard(recipes.filter(recipe =>
+        recipe.category.toLowerCase().includes(categoryName.toLowerCase())
+    ));
 });
 
-
-// Filter for temples dedicated before 1900
+// Filter for lunch items
 const lunchLink = document.querySelector("#lunch");
+const lunchHeader = document.querySelector("#category-title");
+
 lunchLink.addEventListener("click", () => {
-    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Lunch") || recipe.category.includes("lunch")));
+    const categoryName = "Lunch";
+    lunchHeader.textContent = `Here are some yummy suggestions for: ${categoryName}`;
+    `Category: ${categoryName}`;
+
+    createRecipeCard(recipes.filter(recipe =>
+        recipe.category.toLowerCase().includes(categoryName.toLowerCase())
+    ));
 });
 
-
-// Filter for temples dedicated after 2000
+// Filter for desserts
 const dessertsLink = document.querySelector("#desserts");
+const dessertsHeader = document.querySelector("#category-title");
+
 dessertsLink.addEventListener("click", () => {
-    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Desserts") || recipe.category.includes("desserts")));
-})
+    const categoryName = "Dessert";
+    dessertsHeader.textContent = `Here are some yummy suggestions for: ${categoryName}`;
+    `Category: ${categoryName}`;
 
-// Filter for temples larger in area than 90,000 square  feet
+    createRecipeCard(recipes.filter(recipe =>
+        recipe.category.toLowerCase().includes(categoryName.toLowerCase())
+    ));
+});
+
+// Filter for beverages
 const beveragesLink = document.querySelector("#beverages");
-beveragesLink.addEventListener("click", () => {
-    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Beverages") || recipe.category.includes("beverages")));
-})
+const beveragesHeader = document.querySelector("#category-title");
 
-// Filter for temples smaller in area than 10,000 square  feet
+beveragesLink.addEventListener("click", () => {
+    const categoryName = "Beverages";
+    beveragesHeader.textContent = `Here are some yummy suggestions for: ${categoryName}`;
+    `Category: ${categoryName}`;
+
+    createRecipeCard(recipes.filter(recipe =>
+        recipe.category.toLowerCase().includes(categoryName.toLowerCase())
+    ));
+});
+
+// Filter for snacks
 const snacksLink = document.querySelector("#snacks");
+const snacksHeader = document.querySelector("#category-title");
+
 snacksLink.addEventListener("click", () => {
-    createRecipeCard(recipes.filter(recipe => recipe.category.includes("Snacks") || recipe.category.includes("snacks")));
+    const categoryName = "Snacks";
+    snacksHeader.textContent = `Here are some yummy suggestions for: ${categoryName}`;
+    `Category: ${categoryName}`;
+
+    createRecipeCard(recipes.filter(recipe =>
+        recipe.category.toLowerCase().includes(categoryName.toLowerCase())
+    ));
 });
 
 
@@ -220,22 +244,27 @@ function createRecipeCard(filteredRecipes) {
         let ingredients = document.createElement("p");
         ingredients.textContent = "Ingredients:";
         let ingredientsList = document.createElement("ul");
-        let diretions = document.createElement("textarea");
         let directionbox = document.createElement("p");
         directionbox.textContent = "Directions:";
-        let directions = document.createElement("textarea");
+        let directions = document.createElement("p");
         let bythewaybox = document.createElement("p");
         bythewaybox.textContent = "By the way...";
-        let bytheway = document.createElement("textarea");
+        let bytheway = document.createElement("p");
         let contributedby = document.createElement("h4");
 
-
+    
         name.textContent = recipe.nameOfDish;
         img.setAttribute("src", recipe.imageUrl);
         img.setAttribute("alt", `${recipe.nameOfDish} recipe`);
         img.setAttribute("loading", "lazy");
-        img.setAttribute("width", "400");
-        img.setAttribute("height", "250");
+        img.setAttribute("width", "95%");
+        img.setAttribute("height", "auto");
+        img.style.display = 'block';
+        img.style.marginLeft = 'auto';
+        img.style.marginRight = 'auto';
+        img.setAttribute("margin", "5px");
+        img.style.aspectRatio = '1 / 1';
+
         category.innerHTML = `<span class="label">Category:</span> ${recipe.category}`;
         prepTime.innerHTML = `<span class="label">Preperation Time:</span> ${recipe.prepTime}`;
         servings.innerHTML = `<span class="label">Servings:</span> ${recipe.servings}`;
@@ -248,24 +277,61 @@ function createRecipeCard(filteredRecipes) {
             ingredientsList.appendChild(li);
         });
 
+
+
         name.style.fontFamily = "Baskerville, Times New Roman";
-        name.style.fontSize = "1.5rem";
+        name.style.fontSize = "clamp( .75rem, 5vw, 2rem)";
         name.style.color = "#205915";
 
         category.style.fontFamily = "Baskerville, Times New Roman";
-        category.style.fontSize = "1.5rem";
-        category.style.color = "#0a585d";
+        category.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)"
+        category.style.fontWeight = "bold";
+        category.style.color = "#880000";
 
-        ingredients.style.fontSize = "1.3rem";
+        prepTime.style.fontFamily = "Baskerville, Times New Roman";
+        prepTime.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)";
+        prepTime.style.color = "#0a585d";
+        prepTime.style.fontWeight = "bold";
+
+        servings.style.fontFamily = "Baskerville, Times New Roman";
+        servings.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)";
+        servings.style.fontWeight = "bold";
+        servings.style.color = "#205915";
+
+        ingredients.style.fontFamily = "Baskerville, Times New Roman";
+        ingredients.style.fontSize = "clamp(.75rem, 5vw, 2rem)";
         ingredients.style.color = "#880000";
 
-        ingredientsList.style.listStyleType = 'none';
         ingredientsList.style.fontFamily = "Pacifico, cursive";
+        ingredientsList.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)";
+        ingredientsList.style.color = "#0a585d";
+
+        directionbox.style.fontFamily = "Baskerville, Times New Roman";
+        directionbox.style.fontSize = "clamp(.75rem, 5vw, 2rem)";
+        directionbox.style.color = "#205915";
+
+        directions.style.fontFamily = "Baskerville, Times New Roman";
+        directions.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)";
+        directions.style.color = "#880000";
+
+        bythewaybox.style.fontFamily = "Baskerville, Times New Roman";
+        bythewaybox.style.fontSize = "clamp(.75rem, 5vw, 2rem)";
+        bythewaybox.style.color = "#0a585d";
+
+        bytheway.style.fontFamily = "Pacifico, cursive";
+        bytheway.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)";
+        bytheway.style.color = "#205915";
 
         directions.innerHTML = `${recipe.directions}`;
         directions.style.fieldSizing = 'content';
         directions.style.fontFamily = "Pacifico, cursive";
         directions.style.padding = "5px 10px";
+        directions.style.width = "95%";
+
+        contributedby.style.fontFamily = "Baskerville, Times New Roman";
+        contributedby.style.fontSize = "clamp(.75rem, 5vw, 1.5rem)"
+        contributedby.style.color = "#880000";
+
 
         bytheway.innerHTML = `${recipe.bytheway}`;
         bytheway.style.fieldSizing = 'content';
@@ -295,3 +361,58 @@ function createRecipeCard(filteredRecipes) {
     });
 
 }
+
+// **************VIEW NUMBER OF VISITS IN LOCAL STORAGE******************
+// Initialize display element variable
+const visitsDisplay = document.querySelector(".visits");
+
+//Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+// Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
+//if (numVisits !== 0) {
+//    visitsDisplay.textContent = numVisits;
+//} else {
+//    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+//}
+
+if (numVisits !== null && numVisits !== 0 && numVisits !== undefined) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    // Handles cases where it is 0 or explicitly null
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+// increment the number of visits by one.
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+
+// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+
+// **************MY TRADITIONAL FOOTER CODE******************
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the span element by its ID
+    const lastModifiedSpan = document.getElementById('lastModifiedDate');
+
+    // Get the last modified date of the document
+    const lastModified = document.lastModified;
+
+    // Create a new Date object from the last modified string
+    const dateObject = new Date(lastModified);
+
+    // Format the date for display (e.g., using toLocaleDateString and toLocaleTimeString)
+    const formattedDate = dateObject.toLocaleDateString() + ' ' + dateObject.toLocaleTimeString();
+
+    // Update the innerHTML of the span with the formatted date
+    if (lastModifiedSpan) {
+        lastModifiedSpan.textContent = formattedDate;
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const yearSpan = document.getElementById("currentYear");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+});

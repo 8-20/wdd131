@@ -27,6 +27,7 @@ body {
             #157170,
             #f59410) 3;
 }
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;

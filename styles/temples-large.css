@@ -2,7 +2,7 @@
 
 In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
 */
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) {
 
     h2 {
         margin-left: auto;

@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./styles/view-recipes.css">
-    <script src="./scripts/view-recipes.js" defer></script>
+    <scriptxxxxxxxxxxxxxxxx src="./scripts/view-recipes.js" defer></scriptxxxxxxxxxxxxxxxx>
     <link rel="icon" type="image/png" href="rainbow-compass.ico">
 </head>
 
@@ -27,36 +27,42 @@
             <div class="logo-menu">
                 <a href="index.html">
                     <figure>
-                        <img src="./images/logo.webp" alt="Stylized logo for way2yummy.com" loading="lazy">
+                        <img src="./images/logo.webp" loading="lazy" alt="Stylized logo for way2yummy.com" width="128" height="128" >
                         <figcaption>Click to return to the Home page.</figcaption>
                     </figure>
                 </a>
 
-                <a id="menu" href="#"></a>
+                <a id="menu" href="#"><span class="hide">.</span></a>
             </div>
 
         <nav>
             <ul class="navigation">
 
-                <li><a href="#" id="dinner">Home Dinner</a></li>
-                <li><a href="#" id="lunch">Old Lunch</a></li>
-                <li><a href="#" id="desserts">New Desserts</a></li>
-                <li><a href="#" id="beverages">Large Beverages</a></li>
-                <li><a href="#" id="snacks">Small Snacks</a></li>
+                <li><a href="#" id="dinner">Dinner</a></li>
+                <li><a href="#" id="lunch">Lunch</a></li>
+                <li><a href="#" id="desserts">Desserts</a></li>
+                <li><a href="#" id="beverages">Beverages</a></li>
+                <li><a href="#" id="snacks">Snacks</a></li>
                 </ul>
 
         </nav>
 
     </header>
-    
+
+        
     <main>
-        <h2>Home</h2>
+        <h2 id="category-title">Here are all our yummy recipes:</h2>
+        <p></p>
         <div class="res-grid"></div>
     </main>
 
     <footer>
-        <p> ©️ <span id="currentYear"></span> 🌈 Paul A. Scherbel 🌈 Star Valley, Wyoming 🌈</p>
+        <p> ©️ <span id="currentYear"></span> 🌈 Paul A. Scherbel 🌈</p>
+        <p>🌟 Star Valley, Wyoming 🌟</p>
         <p>Last updated: <span id="lastModifiedDate"></span></p>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        <a href="references.html" class="ref-button">🥸 View reference document 🥸</a>
+    
     </footer>
 
 </body>
